@@ -15,6 +15,13 @@
     padding-top: 50px;
 }
 
+.game-support-manage-account{  
+    left: 420px;
+    position: absolute;
+    top: 320px;
+}
+
+
 /*conditionally rendering the css*/
 
 .game-support-button, .manage-account-button{
@@ -41,6 +48,11 @@
 }
 
 @media (min-width: 320px) and (max-width:375px) {
+    .game-support-manage-account{  
+        left: 20px;
+    }
+
+    
     .homepage-header-text{
         font-size: 27px;
         padding: 50px 20px 0 20px;
@@ -48,6 +60,11 @@
 }
 
 @media (min-width: 376px) and (max-width:425px) {
+    .game-support-manage-account{  
+        left: 20px;
+    }
+
+
     .homepage-header-text{
         font-size: 27px;
         padding: 50px 20px 0 20px;
@@ -56,6 +73,11 @@
 
 
 @media (min-width: 426px) and (max-width:768px) {
+    .game-support-manage-account{  
+        left: 20px;
+    }
+
+    
     .homepage-header-text{
         font-size: 32px;
         padding-top: 75px;

@@ -20,11 +20,13 @@ const Home = () => {
   }
 
   {/*In the above functions when we try to get the value of isActive inside the function using console log we won't the current value
-    this is because the setState is asynchronous and it holds the previous value, so we are logging it below in the useeffect. */}
+    this is because the setState is asynchronous and it holds the previous value, so we are logging it below in the useeffect. 
 
   useEffect(() => {
     console.log(isActive)
   },[isActive])
+
+  */}
 
   return (
     <div className='home-container'>
@@ -42,14 +44,17 @@ const Home = () => {
 
         {/* Creating the game support and manage account container*/}
         <div className='game-support-manage-account'>
-            <button className={isActive ? 'active-game-support-button' : 'game-support-button'} onClick={handleGameSupport}>Game support</button>
-            <button className={isActive ?'manage-account-button' : 'active-manage-account-button'} onClick={handleManageAccount}>Manage account</button>
+
+            <div className='game-support-manage-account-buttons'>
+              <button className={isActive ? 'active-game-support-button' : 'game-support-button'} onClick={handleGameSupport}>Game support</button>
+              <button className={isActive ?'manage-account-button' : 'active-manage-account-button'} onClick={handleManageAccount}>Manage account</button>
+            </div>
+            {/*Conditionally rendering the game support and manage account container*/}
+
+            {isActive ? <GameSupport /> : <ManageAccount />}
+
         </div>
 
-        {/*Conditionally rendering the game support and manage account container*/}
-        <div>
-          {isActive ? <GameSupport /> : <ManageAccount />}
-        </div>
 
     </div>
   )

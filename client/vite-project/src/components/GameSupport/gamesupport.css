@@ -1,0 +1,12 @@
+.game-support-container{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.game-support-input-filter{
+    display: flex;
+}
+
+.game-support-filter{
+    display: flex;
+}

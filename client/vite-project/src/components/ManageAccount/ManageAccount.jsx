@@ -3,7 +3,9 @@ import './manageaccount.css'
 
 const ManageAccount = () => {
   return (
-    <div>ManageAccount</div>
+    <div className='manage-account-container'>
+      ManageAccount
+    </div>
   )
 }
 
