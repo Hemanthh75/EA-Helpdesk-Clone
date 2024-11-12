@@ -1,12 +1,166 @@
-.game-support-container{
-    margin-top: 40px;
-    margin-left: 10px;
+
+
+@media (min-width: 1024px) {
+    .game-support-container{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .game-support-input-filter{
+        display: flex;
+    }
+    
+    .game-support-input{
+        width: 400px;
+        border: 1px solid gray;
+        color: gray;
+    }
+    
+    .game-support-filter-container{
+        display: flex;
+        margin-left: 350px;
+    }
+    
+    .game-support-filter-text{
+        padding-top: 15px;
+        color: #737373;
+        font-weight: 900;
+    }
+    
+    .game-support-filter-dropdown{
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        margin-top: 6px;
+    }
+    
 }
 
-.game-support-input-filter{
-    display: flex;
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .game-support-container{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .game-support-input{
+        width: 700px;
+        border: 1px solid gray;
+        color: gray;
+    }
+    
+    .game-support-filter-container{
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .game-support-filter-text{
+        padding-top: 15px;
+        color: #737373;
+        font-weight: 900;
+    }
+    
+    .game-support-filter-dropdown{
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        margin-top: 6px;
+    }
+    
 }
 
-.game-support-filter{
-    display: flex;
+@media (min-width: 425px) and (max-width: 767px) {
+    .game-support-container{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .game-support-input{
+        width: 370px;
+        border: 1px solid gray;
+        color: gray;
+    }
+    
+    .game-support-filter-container{
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .game-support-filter-text{
+        padding-top: 15px;
+        color: #737373;
+        font-weight: 900;
+    }
+    
+    .game-support-filter-dropdown{
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        margin-top: 6px;
+    }
+    
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .game-support-container{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .game-support-input{
+        width: 300px;
+        border: 1px solid gray;
+        color: gray;
+    }
+    
+    .game-support-filter-container{
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .game-support-filter-text{
+        padding-top: 15px;
+        color: #737373;
+        font-weight: 900;
+    }
+    
+    .game-support-filter-dropdown{
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        margin-top: 6px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .game-support-container{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    
+    .game-support-input{
+        width: 270px;
+        border: 1px solid gray;
+        color: gray;
+    }
+    
+    .game-support-filter-container{
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .game-support-filter-text{
+        padding-top: 15px;
+        color: #737373;
+        font-weight: 900;
+    }
+    
+    .game-support-filter-dropdown{
+        margin-left: 5px;
+        width: 200px;
+        height: 40px;
+        margin-top: 6px;
+    }
+    
 }
