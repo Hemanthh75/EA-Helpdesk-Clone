@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Home.css'
+import './dummy.css'
 import Navbar from '../../components/Navbar/Navbar'
 import GameSupport from '../../components/GameSupport/GameSupport';
 import ManageAccount from '../../components/ManageAccount/ManageAccount';

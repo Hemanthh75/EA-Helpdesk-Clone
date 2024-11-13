@@ -1,4 +1,7 @@
-
+.grid-item-image{
+    width: 125px;
+    height: 180px;
+}
 
 @media (min-width: 1024px) {
     .game-support-container{
@@ -33,6 +36,22 @@
         height: 40px;
         margin-top: 6px;
     }
+
+    .grid-item-image{
+        width: 158px;
+        height: 222px;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-top: 20px;
+    }
+
+    .grid-item{
+        margin-bottom: 220px;
+        margin-right: 58px;
+    }
     
 }
 
@@ -66,6 +85,18 @@
         height: 40px;
         margin-top: 6px;
     }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .grid-item{
+        margin-bottom: 220px;
+        margin-right: 100px;
+    }
     
 }
 
@@ -97,6 +128,18 @@
         width: 200px;
         height: 40px;
         margin-top: 6px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .grid-item{
+        margin-bottom: 220px;
+        margin-right: 100px;
     }
     
 }
@@ -130,6 +173,17 @@
         height: 40px;
         margin-top: 6px;
     }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 100px;
+    }
+
+    .grid-item{
+        margin-bottom: 220px;
+        margin-right: 50px;
+    }
     
 }
 
@@ -162,5 +216,17 @@
         height: 40px;
         margin-top: 6px;
     }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 100px;
+    }
+
+    .grid-item{
+        margin-bottom: 220px;
+        margin-right: 25px;
+    }
+    
     
 }

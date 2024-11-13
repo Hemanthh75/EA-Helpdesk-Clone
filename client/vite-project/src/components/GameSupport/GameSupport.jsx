@@ -4,9 +4,9 @@ import './gamesupport.css'
 const GameSupport = () => {
   return (
     <div className='game-support-container'>
+
+        {/*game support input field and dropdown*/}
         <div className='game-support-input-filter'>
-
-
             <div className='game-support-input-container'>
               {/*game support input field*/}
               <input type="text" className='game-support-input' placeholder='Search for a game or product' />
@@ -24,6 +24,71 @@ const GameSupport = () => {
               </select>
             </div>
         </div>
+
+        {/*Grid container for games*/}
+        <div className='grid-container'>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+            <div className="grid-item">
+              <img className='grid-item-image' src='/public/images/Games/EaAccount.png' />
+              <div className='grid-item-text'>EA Account</div>
+            </div>
+        </div>
+
     </div>
   )
 }

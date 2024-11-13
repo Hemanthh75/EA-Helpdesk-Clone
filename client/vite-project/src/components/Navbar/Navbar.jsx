@@ -25,20 +25,21 @@ const Navbar = () => {
 
         {/* Navbar for large screens */}
         <div className='navbar-non-logo-items'>
-        <span className='navbar-items navbar-text'>My cases</span>
+                <span className='navbar-items navbar-text'>My cases</span>
 
-        <select className='navbar-items navbar-dropdown'>
-            <option className='navbar-dropdown-item' hidden value="">Manage My Account</option>
-            <option className='navbar-dropdown-item' value="1">Change or Recover Password</option>
-            <option className='navbar-dropdown-item' value="2">Change Email Address</option>
-            <option className='navbar-dropdown-item' value="3">Order Management</option>
-            <option className='navbar-dropdown-item' value="4">Redeem a Code</option>
-            <option className='navbar-dropdown-item' value="5">Account Security</option>
-            <option className='navbar-dropdown-item' value="6">Link or Unlink my EA Account</option>
-            <option className='navbar-dropdown-item' value="7">My ban History</option>
-        </select>
-        <span className='navbar-items navbar-login'>Login/</span>
-        <span className='navbar-items navbar-signup'>Signup</span>
+                <select className='navbar-items navbar-dropdown'>
+                    <option className='navbar-dropdown-item' hidden value="">Manage My Account</option>
+                    <option className='navbar-dropdown-item' value="1">Change or Recover Password</option>
+                    <option className='navbar-dropdown-item' value="2">Change Email Address</option>
+                    <option className='navbar-dropdown-item' value="3">Order Management</option>
+                    <option className='navbar-dropdown-item' value="4">Redeem a Code</option>
+                    <option className='navbar-dropdown-item' value="5">Account Security</option>
+                    <option className='navbar-dropdown-item' value="6">Link or Unlink my EA Account</option>
+                    <option className='navbar-dropdown-item' value="7">My ban History</option>
+                </select>
+
+                <span className='navbar-items navbar-login'>Login/</span>
+                <span className='navbar-items navbar-signup'>Signup</span>
         </div>
 
 
@@ -52,8 +53,8 @@ const Navbar = () => {
             <div className='navbar-menu-small-screens'>
                 <img src="/public/images/hamburger.png" className='menu-hamburger' alt="hamburgerlogo" onClick={() => setIsHamburgerOpen(!isHamrburgerOpen)} />
                 <div className='navbar-menu-items-small-screens'>    
-                    <p>Login/Signup</p>
-                    <p>My Cases</p>
+                    <p className='navbar-items-small-screens'>Login/Signup</p>
+                    <p className='navbar-items-small-screens'>My Cases</p>
                     <select className='navbar-items-small-screens navbar-dropdown-small-screen'>
                         <option className='navbar-dropdown-item-small-screen' hidden value="">Manage My Account</option>
                         <option className='navbar-dropdown-item-small-screen' value="1">Change or Recover Password</option>
