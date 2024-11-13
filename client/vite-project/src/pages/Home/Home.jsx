@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './dummy.css'
+import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import GameSupport from '../../components/GameSupport/GameSupport';
 import ManageAccount from '../../components/ManageAccount/ManageAccount';
@@ -37,7 +37,7 @@ const Home = () => {
         {/* Creating the container below the homepage */}
         <div className='homepage-header-container'>
             <h1 className='homepage-header-text'>EA HELP: Official Support | United States <br />
-              What do you need help with?
+              <span className='homepage-header-text-para2'>What do you need help with?</span>
             </h1>
         </div>
 
