@@ -56,6 +56,18 @@ const Home = () => {
         </div>
 
 
+         {/*Community block container*/}
+         <div className="home-community-container">
+              <div className='home-community-container-text'>
+                  <h1>Get Help From the Community</h1>
+                  <p>Find gameplay tips, and level up by answering player questions 24/7</p>
+              </div>
+              <div className='home-community-container-button-container'>
+                <button className='home-community-container-button'>Go</button>
+              </div>
+          </div>
+
+
     </div>
   )
 }

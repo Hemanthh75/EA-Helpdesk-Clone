@@ -3,6 +3,24 @@
     height: 180px;
 }
 
+.grid-item-text{
+    color: #474747;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+.game-support-see-more-button{
+    background-color: #ffffff;
+    color: #0D1042;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 1px 6px;
+}
+
+
+
 @media (min-width: 1024px) {
     .game-support-container{
         margin-top: 40px;
@@ -54,7 +72,21 @@
         margin-bottom: 10px;
         margin-right: 25px
     }
+
+    .grid-item-text{
+        padding-left: 50px;
+    }
     
+    .game-support-see-more-button{
+        width: 121px;
+        height: 48px;
+    }
+
+    .game-support-see-more-button-container{
+        padding-left: 41.5%;
+    }
+    
+
 }
 
 
@@ -101,6 +133,20 @@
         margin-right: 25px;
     }
     
+    .grid-item-text{
+        padding-left: 35px;
+    }
+
+    .game-support-see-more-button{
+        width: 121px;
+        height: 48px;
+    }
+
+    .game-support-see-more-button-container{
+        padding-left: 38%;
+    }
+    
+    
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -144,6 +190,16 @@
         margin-bottom: 10px;
         margin-right: 25px;
     }
+
+    .grid-item-text{
+        padding-left: 35px;
+    }
+
+    .game-support-see-more-button{
+        width: 393px;
+        height: 48px;
+    }
+    
     
 }
 
@@ -189,6 +245,15 @@
         margin-right: 20px;
     }
     
+    .grid-item-text{
+        padding-left: 35px;
+    }
+    
+    .game-support-see-more-button{
+        width: 343px;
+        height: 48px;
+    }
+    
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -230,6 +295,15 @@
     .grid-item{
         margin-bottom: 10px;
         margin-right: 20px;
+    }
+    
+    .grid-item-text{
+        padding-left: 35px;
+    }
+
+    .game-support-see-more-button{
+        width: 288px;
+        height: 48px;
     }
     
     

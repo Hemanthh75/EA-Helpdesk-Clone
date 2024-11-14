@@ -89,6 +89,14 @@ const GameSupport = () => {
             </div>
         </div>
 
+        {/*See More button */}
+        <div className='game-support-see-more-button-container'>
+          <button className='game-support-see-more-button'>See More</button>
+        </div>
+
+
+       
+
     </div>
   )
 }

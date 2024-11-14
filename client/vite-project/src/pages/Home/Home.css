@@ -38,6 +38,16 @@
 }
 
 
+
+.home-community-container{
+    background: linear-gradient(61.33deg, #0d1042 45.67%, #ff4747 113.61%);
+    margin-top: 20px;
+}
+
+.home-community-container-text{
+    color: #ffffff;
+}
+
 @media screen and (min-width: 1024px){
     .homepage-header-container{
         margin-top: 10px;
@@ -54,6 +64,14 @@
         width: 1056px;
         margin: 0 auto;
     }
+
+    .home-community-container{
+        height: 194px;
+    }
+
+    .home-community-container{
+        display: flex;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -69,6 +87,10 @@
     .game-support-manage-account{  
         width: 736px;
         margin: 0 auto;
+    }
+
+    .home-community-container{
+        height: 194px;
     }
 }
 
@@ -87,6 +109,10 @@
         width: 393px;
         margin: 0 auto;
     }
+
+    .home-community-container{
+        height: 212px;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 424px){
@@ -104,6 +130,10 @@
         width: 343px;
         margin: 0 auto;
     }
+
+    .home-community-container{
+        height: 240px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 374px){
@@ -120,5 +150,9 @@
     .game-support-manage-account{  
         width: 288px;
         margin: 0 auto;
+    }
+
+    .home-community-container{
+        height: 240px;
     }
 }
