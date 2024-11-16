@@ -38,15 +38,57 @@
 }
 
 
-
+.home-community-featured{
+    margin-top: 20px;
+}
 .home-community-container{
     background: linear-gradient(61.33deg, #0d1042 45.67%, #ff4747 113.61%);
-    margin-top: 20px;
 }
 
 .home-community-container-text{
     color: #ffffff;
 }
+
+.home-community-container-text-heading{
+    font-size: 24px;
+}
+
+.home-community-container-text-para{
+    font-size: 18px;
+}
+
+
+
+.home-featured-left-heading{
+    color: #ff1414;
+    font-size: 26px;
+}
+
+.home-featured-left-button{
+    height: 48px;
+    background-color: #ff4747;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+
+.home-featured-left-eatext-container{
+    width: 66px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: #ffffff;
+    font: 16px;
+}
+
+.home-featured-left-eatext{
+    position: absolute;
+  
+}
+
 
 @media screen and (min-width: 1024px){
     .homepage-header-container{
@@ -67,11 +109,59 @@
 
     .home-community-container{
         height: 194px;
+        margin-bottom: 20px;
     }
 
     .home-community-container{
         display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
+
+    .home-community-container-text-heading{
+        margin-bottom: 15px;
+    }
+
+    .home-community-container-button{
+        width: 168px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .home-community-featured{
+        height: 549px;
+    }
+
+    .home-featured-container{
+        width: 1020px;
+        height: 275px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        box-shadow: 2px 2px 20px 2px gray;
+    }
+
+    .home-featured-right-Image{
+        width: 488px;
+        height: 275px;
+    }
+
+    .home-featured-left{
+        padding: 50px 20px 20px;
+    }
+
+    .home-featured-left-heading{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .home-featured-left-button{
+        margin-top: 10px;
+        width: 110px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -89,8 +179,50 @@
         margin: 0 auto;
     }
 
+    .home-community-featured{
+        height: 763px;
+        position: relative;
+    }
+
+    
     .home-community-container{
         height: 194px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .home-community-container-button{
+        width: 168px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .home-featured-left{
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px 0 gray;
+    }
+
+    .home-featured-right{
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .home-featured-left-heading{
+        margin-bottom: 20px;
+    }
+
+    .home-featured-left-button{
+        width: 738px;
+        margin-top: 20px;
     }
 }
 
@@ -110,8 +242,58 @@
         margin: 0 auto;
     }
 
+    .home-community-featured{
+        height: 714.06px;
+        position: relative;
+    }
+
     .home-community-container{
         height: 212px;
+    }
+
+    .home-community-container{
+        height: 194px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .home-community-container-button{
+        width: 393px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .home-featured-left{
+        position: absolute;
+        top: 450px;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px 0 gray;
+    }
+
+    .home-featured-right{
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .home-featured-left-heading{
+        margin-bottom: 10px;
+    }
+
+    .home-featured-right-Image{
+        height: 239.06px;
+    }
+    
+
+    .home-featured-left-button{
+        width: 395px;
+        margin-top: 10px;
     }
 }
 
@@ -131,8 +313,56 @@
         margin: 0 auto;
     }
 
+    .home-community-featured{
+        height: 713.94px;
+        position: relative;
+    }
+
     .home-community-container{
         height: 240px;
+    }
+
+    .home-community-container{
+        height: 194px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .home-community-container-button{
+        width: 343px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .home-featured-left{
+        position: absolute;
+        top: 425px;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px 0 gray;
+    }
+
+    .home-featured-right{
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .home-featured-left-heading{
+        margin-bottom: 10px;
+    }
+
+    .home-featured-right-Image{
+        height: 210.94px;
+    }
+
+    .home-featured-left-button{
+        width: 345px;
     }
 }
 
@@ -154,5 +384,54 @@
 
     .home-community-container{
         height: 240px;
+    }
+
+    .home-community-container{
+        height: 194px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .home-community-featured{
+        height: 707px;
+        position: relative;
+    }
+
+    .home-community-container-button{
+        width: 288px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .home-featured-left{
+        position: absolute;
+        top: 390px;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 20px 0 gray;
+    }
+
+    .home-featured-right{
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .home-featured-left-heading{
+        margin-bottom: 10px;
+    }
+
+    .home-featured-right-Image{
+        height: 180px;
+    }
+
+    .home-featured-left-button{
+        width: 290px;
+        margin-top: 10px;
     }
 }

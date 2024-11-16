@@ -56,15 +56,32 @@ const Home = () => {
         </div>
 
 
-         {/*Community block container*/}
-         <div className="home-community-container">
-              <div className='home-community-container-text'>
-                  <h1>Get Help From the Community</h1>
-                  <p>Find gameplay tips, and level up by answering player questions 24/7</p>
+         {/*Community block container and featured games*/}
+
+         <div className='home-community-featured'>
+          {/*Community block container*/}
+            <div className="home-community-container">
+                  <div className='home-community-container-text'>
+                      <h1 className='home-community-container-text-heading'>Get Help From the Community</h1>
+                      <p className='home-community-container-text-para'>Find gameplay tips, and level up by answering player questions 24/7</p>
+                  </div>
+                  <div className='home-community-container-button-container'>
+                    <button className='home-community-container-button'>GO</button>
+                  </div>
               </div>
-              <div className='home-community-container-button-container'>
-                <button className='home-community-container-button'>Go</button>
-              </div>
+
+               {/*featured games container*/}
+               <div className='home-featured-container'>
+                    <div className="home-featured-left">
+                         <div className='home-featured-left-eatext-container'><p className='home-featured-left-eatext'>EA.COM</p></div>
+                        <h1 className='home-featured-left-heading'>Keep up with the latest EA games and news</h1>
+                        <p className='home-featured-left-text'>Get closer to your favorite games and checkout exclusive stories from the world of EA.</p>
+                        <button className='home-featured-left-button'>GO</button>
+                    </div>
+                    <div className="home-featured-right">
+                        <img src="/public/Images/EABanner.png" alt="EA Banner" className='home-featured-right-Image' />
+                    </div>
+               </div>
           </div>
 
 
