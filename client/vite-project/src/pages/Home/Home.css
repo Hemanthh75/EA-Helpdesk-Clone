@@ -79,15 +79,13 @@
     height: 32px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: blue;
     color: #ffffff;
-    font: 16px;
+    font-size: 12px;
 }
 
-.home-featured-left-eatext{
-    position: absolute;
-  
-}
+
 
 
 @media screen and (min-width: 1024px){
@@ -141,6 +139,7 @@
         justify-content: center;
         margin: auto;
         box-shadow: 2px 2px 20px 2px gray;
+        position: relative;
     }
 
     .home-featured-right-Image{
@@ -152,6 +151,12 @@
         padding: 50px 20px 20px;
     }
 
+    .home-featured-left-eatext-container{
+        position: absolute;
+        margin-top: -242px;
+        margin-left: -955px;
+    }
+
     .home-featured-left-heading{
         font-size: 32px;
         margin-bottom: 10px;
@@ -161,6 +166,7 @@
         margin-top: 10px;
         width: 110px;
     }
+    
 
 }
 
@@ -204,6 +210,7 @@
         position: absolute;
         top: 600px;
         width: 100%;
+        margin-top: -27px;
         padding-top: 10px;
         padding-left: 15px;
         padding-bottom: 20px;
@@ -213,7 +220,8 @@
     .home-featured-right{
         position: absolute;
         right: 0;
-        margin-top: 20px;
+        margin-top: -15px;
+        margin-top: 19px;
     }
 
     .home-featured-left-heading{
@@ -224,6 +232,15 @@
         width: 738px;
         margin-top: 20px;
     }
+
+
+
+    .home-featured-left-eatext-container{
+        position: absolute;
+        margin-top: 20px;
+    }
+
+ 
 }
 
 @media (min-width: 425px) and (max-width: 767px){
@@ -295,6 +312,14 @@
         width: 395px;
         margin-top: 10px;
     }
+    
+    .home-featured-left-eatext-container{
+        position: absolute;
+        margin-top: 20px;
+        z-index: 999;
+    }
+
+
 }
 
 @media (min-width: 375px) and (max-width: 424px){
@@ -364,6 +389,14 @@
     .home-featured-left-button{
         width: 345px;
     }
+
+    .home-featured-left-eatext-container{
+        position: absolute;
+        margin-top: 20px;
+        z-index: 999;
+    }
+
+
 }
 
 @media (min-width: 320px) and (max-width: 374px){
@@ -434,4 +467,12 @@
         width: 290px;
         margin-top: 10px;
     }
+
+    .home-featured-left-eatext-container{
+        position: absolute;
+        margin-top: 20px;
+        z-index: 999;
+    }
+
+
 }

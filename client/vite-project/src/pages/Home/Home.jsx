@@ -3,6 +3,7 @@ import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import GameSupport from '../../components/GameSupport/GameSupport';
 import ManageAccount from '../../components/ManageAccount/ManageAccount';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 
@@ -73,17 +74,21 @@ const Home = () => {
                {/*featured games container*/}
                <div className='home-featured-container'>
                     <div className="home-featured-left">
-                         <div className='home-featured-left-eatext-container'><p className='home-featured-left-eatext'>EA.COM</p></div>
                         <h1 className='home-featured-left-heading'>Keep up with the latest EA games and news</h1>
                         <p className='home-featured-left-text'>Get closer to your favorite games and checkout exclusive stories from the world of EA.</p>
                         <button className='home-featured-left-button'>GO</button>
                     </div>
+                    <div className='home-featured-left-eatext-container'><p className='home-featured-left-eatext'>EA.COM</p></div>
                     <div className="home-featured-right">
                         <img src="/public/Images/EABanner.png" alt="EA Banner" className='home-featured-right-Image' />
                     </div>
                </div>
           </div>
 
+      
+
+        {/*Footer container*/}
+        <Footer />
 
     </div>
   )
