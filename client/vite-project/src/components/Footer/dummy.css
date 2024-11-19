@@ -1,0 +1,139 @@
+a{
+    text-decoration: none;
+    color: #000000;
+ }
+ 
+ .footer-wrapper{   
+     display: flex;
+     background-color: rgb(240, 239, 239);
+     position: relative;
+ }
+ 
+ 
+ 
+ 
+ .middle-footer-top-links{
+     display: flex;
+ 
+ }
+ 
+ .middle-footer-middle-links{
+     margin-top: 40px;
+ }
+ 
+ .middle-footer-middle-link{
+    margin-right: 20px;
+ }
+ .middle-footer-top-link{
+     font-size: 19px;
+     font-weight: bold;
+ }
+ 
+ .footer-copyright{
+     margin-top: 20px;
+ }
+ 
+ .left-footer-section-image{
+     border-radius: 50%;
+ }
+ 
+ @media screen and (min-width: 1024px){
+     .social-links-container{
+         display: flex;
+         justify-content: end;
+         margin-right: 150px;
+     }
+     
+     .social-links{
+         display: flex;
+         justify-content: space-around;
+         margin: 0px 20px;
+         gap: 20px;
+     }
+ 
+     .footer-wrapper{
+         display: flex;
+         justify-content: space-around;  
+         align-items: center;
+         height: 164px;
+     }
+ 
+     .left-footer-section{
+         position: absolute;
+         left: 120px;
+         top: 10px;
+     }
+ 
+ 
+     .middle-footer-section{
+         position: absolute;
+         top: 10px;
+         left: 250px;
+     }
+ 
+     .right-footer-section{
+         position: absolute;
+         right: 140px;
+         top: 10px;
+     }
+ 
+     .localization-dropdown{
+         width: 190.59px;
+         height: 60px;
+     }
+     
+ }
+ 
+ @media (min-width: 768px) and (max-width: 1023px){
+     .social-links-container{
+         display: flex;
+         justify-content: end;
+         margin-right: 150px;
+     }
+     
+     .social-links{
+         display: flex;
+         justify-content: space-around;
+         margin: 0px 20px;
+         gap: 20px;
+     }
+ }
+ 
+ @media (min-width: 425px) and (max-width: 767px){
+     .social-links-container{
+         display: flex;
+         justify-content: center;
+     }
+     
+     .social-links{
+         display: flex;
+         justify-content: space-between;
+         gap: 5px;
+     }
+ }
+ 
+ @media (min-width: 375px) and (max-width: 424px){
+     .social-links-container{
+         display: flex;
+         justify-content: center;
+     }
+     
+     .social-links{
+         display: flex;
+         justify-content: space-between;
+         gap: 5px;
+     }
+ }
+ 
+ @media (min-width: 320px) and (max-width: 374px){
+     .social-links-container{
+         display: flex;
+         justify-content: center;
+     }
+     
+     .social-links{
+         display: flex;
+         justify-content: space-between;
+         gap: 5px;
+     }
+ }

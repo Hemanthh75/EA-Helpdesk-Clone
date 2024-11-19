@@ -90,8 +90,8 @@ const Footer = () => {
                 <p className="footer-copyright">&copy; 2024 Electronic Arts Inc.</p>
               </div>
               <div className="right-footer-section">
-                <select>
-                  <option>United States</option>
+                <select className='localization-dropdown'>
+                  <option className='localization-country'>United States</option>
                 </select>
               </div>
            </div>

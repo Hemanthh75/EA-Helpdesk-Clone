@@ -57,7 +57,9 @@
     font-size: 18px;
 }
 
-
+.home-featured-container{
+    overflow-y: hidden;
+}
 
 .home-featured-left-heading{
     color: #ff1414;
