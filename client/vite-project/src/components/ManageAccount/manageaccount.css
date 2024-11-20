@@ -1,6 +1,27 @@
+.manage-account-container{
+    margin-top: 30px;
+}
+
 .manage-grid-item {
     border: 1px solid gray;
     border-radius: 5px;
+    padding: 24px;
+}
+
+.manage-grid-item-icon{
+    color: red;
+}
+
+.manage-grid-item-title{
+    margin: 20px 0px 0px;
+}
+
+.manage-grid-item-description{
+    margin: 16px 0px 0px;
+}
+
+.manage-grid-item{
+    cursor: pointer;
 }
 
 @media screen and (min-width:1024px){

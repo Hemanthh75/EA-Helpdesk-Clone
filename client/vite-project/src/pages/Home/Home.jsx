@@ -20,7 +20,7 @@ const Home = () => {
       setIsActive(false)
   }
 
-  {/*In the above functions when we try to get the value of isActive inside the function using console log we won't the current value
+  {/*In the above functions when we try to get the value of isActive inside the function using console log we won't get the current value
     this is because the setState is asynchronous and it holds the previous value, so we are logging it below in the useeffect. 
 
   useEffect(() => {

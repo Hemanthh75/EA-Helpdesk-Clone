@@ -1,3 +1,10 @@
+.home-container{
+    background-image: url("/public/Images/HomePageBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .homepage-header-container{
     background-image: url("/public/images/homeheader.png");
     background-repeat: no-repeat;
@@ -87,7 +94,9 @@
     font-size: 12px;
 }
 
-
+.home-community-container-button, .home-featured-left-button{
+    cursor: pointer;
+}
 
 
 @media screen and (min-width: 1024px){

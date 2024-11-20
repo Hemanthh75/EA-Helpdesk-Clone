@@ -1,0 +1,72 @@
+.my-cases-container{
+    background-image: url("/public/Images/MyCasesBG.gif");
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.my-cases-content{
+    background-color: rgb(238, 237, 237);
+}
+
+@media screen and (min-width: 1024px) {
+    .my-cases-container{
+        height: 671px;
+    }
+
+    .my-cases-content{
+        width: 886px;
+        height: 422px;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .my-cases-container{
+        height: 848px;
+        margin-top: 40px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+}

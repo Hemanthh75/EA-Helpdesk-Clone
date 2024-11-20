@@ -19,6 +19,9 @@
     padding: 1px 6px;
 }
 
+.game-support-filter-dropdown, .grid-item, .game-support-see-more-button{
+    cursor: pointer;
+}
 
 
 @media (min-width: 1024px) {

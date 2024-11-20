@@ -16,6 +16,10 @@ a{
     border-radius: 2.5px;
 }
 
+.left-footer-section-image{
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1110px){
     .social-links-container{
         display: flex;
