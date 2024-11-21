@@ -1,0 +1,287 @@
+.my-cases-container{
+    background-image: url("/public/Images/MyCasesBG.gif");
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.my-cases-content-description, .my-cases-content-inputs{
+    background-color: rgb(238, 237, 237);
+}
+
+
+.my-cases-content-description-btn{
+    width: 146px;
+    height: 50px;
+    background-color: #ED5C25;
+    border: none;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0.5px 0.5px 1px 1px black;
+}
+
+
+input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 28px;
+    border: 1px solid gray;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+  }
+
+  
+  .my-cases-content-description-text{
+    font-size: 40px;
+  }
+
+  .my-cases-content-inputs-btn{
+    width: 82.67px;
+    height: 26px;
+    margin-top: 20px;
+ }
+
+ .my-cases-content-inputs-heading{
+    margin-bottom: 10px;
+ }
+
+
+
+@media screen and (min-width: 1024px) {
+    .my-cases-container{
+        height: 671px;
+    }
+
+    .my-cases-content-description{
+        width: 480px;
+        position: relative;
+    }
+
+    .my-cases-content-inputs{
+        width: 406px;
+        border-left: 1px solid rgb(204, 201, 201);
+        padding: 30px 35px 65px;
+    }
+
+    .my-cases-content{
+        width: 886px;
+        height: 422px;
+        margin: 50px auto;
+        display: flex;
+        gap: 4px;
+    }
+
+    .my-cases-content-description-text{
+        padding: 40px 70px 50px;
+    }
+
+    .my-cases-content-description-Image{
+        padding-left: 120px;
+        border-radius: 20%;
+    }
+
+    .my-cases-content-description-btn{
+        position: absolute;
+        right: 20px;
+    }
+
+    
+
+   form{
+    width: 335px;
+    height: 178px;
+   }
+
+   input{
+     width: 347px;
+   }
+
+   
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .my-cases-container{
+        height: 848px;
+        margin-top: 40px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+
+    .my-cases-content-description{
+        position: relative;
+        height: 421px;
+        overflow: hidden;
+    }
+
+    .my-cases-content-inputs{
+        padding: 30px 0px 65px;
+        height: 387px;
+    }
+    .my-cases-content-description-text{
+        padding:  40px 50px 50px;
+    }
+
+    .my-cases-content-description-Image{
+        transform: scale(0.7);
+        border-radius: 20%;
+    }
+
+    .my-cases-content-description-btn{
+        position: absolute;
+        right: 20px;
+    }
+
+    form{
+        width: 297px;
+        height: 178px;
+    }
+
+    input{
+        width: 100%;
+      }
+    
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+
+    .my-cases-content-description{
+        position: relative;
+        height: 421px;
+        overflow: hidden;
+    }
+
+    .my-cases-content-inputs{
+        padding: 30px 0px 65px;
+        height: 387px;
+    }
+    .my-cases-content-description-text{
+        padding:  40px 50px 50px;
+    }
+
+    .my-cases-content-description-Image{
+        transform: scale(0.7);
+        border-radius: 20%;
+    }
+
+    .my-cases-content-description-btn{
+        position: absolute;
+        right: 20px;
+    }
+
+    form{
+        width: 297px;
+        height: 178px;
+    }
+
+    input{
+        width: 100%;
+      }
+    
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+
+    .my-cases-content-description{
+        position: relative;
+        height: 421px;
+        overflow: hidden;
+    }
+
+    .my-cases-content-inputs{
+        padding: 30px 0px 65px;
+        height: 387px;
+    }
+    .my-cases-content-description-text{
+        padding:  40px 50px 50px;
+    }
+
+    .my-cases-content-description-Image{
+        transform: scale(0.7);
+        border-radius: 20%;
+    }
+
+    .my-cases-content-description-btn{
+        position: absolute;
+        right: 20px;
+    }
+
+    form{
+        width: 297px;
+        height: 178px;
+    }
+
+    input{
+        width: 100%;
+      }
+    
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .my-cases-container{
+        height: 848px;
+    }
+
+    .my-cases-content{
+        width: 325px;
+        height: 808px;
+        margin: 50px auto;
+    }
+
+    .my-cases-content-description{
+        position: relative;
+        height: 421px;
+        overflow: hidden;
+    }
+
+    .my-cases-content-inputs{
+        padding: 30px 0px 65px;
+        height: 387px;
+    }
+    .my-cases-content-description-text{
+        padding:  40px 50px 50px;
+    }
+
+    .my-cases-content-description-Image{
+        transform: scale(0.7);
+        border-radius: 20%;
+    }
+
+    .my-cases-content-description-btn{
+        position: absolute;
+        right: 20px;
+    }
+
+    form{
+        width: 297px;
+        height: 178px;
+    }
+
+    input{
+        width: 100%;
+      }
+    
+}

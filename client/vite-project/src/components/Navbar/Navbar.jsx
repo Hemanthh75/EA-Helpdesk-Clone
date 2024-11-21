@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './navbar.css'
+import './navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -19,13 +20,15 @@ const Navbar = () => {
     <div className='navbar-container'>
 
         {/* Creating navbar items */}
-        <img className='navbar-items navbar-logo' src='/public/images/EA Help_logo.png'/>
+        <div><Link to="/"><img className='navbar-items navbar-logo' src='/public/images/EA Help_logo.png'/></Link></div>
         
 
 
         {/* Navbar for large screens */}
         <div className='navbar-non-logo-items'>
-                <span className='navbar-items navbar-text'>My cases</span>
+                <span className='navbar-items navbar-text'>
+                   <Link to="my-cases">My cases</Link>   {/*Linking my cases path */}
+                </span>
 
                 <select className='navbar-items navbar-dropdown'>
                     <option className='navbar-dropdown-item' hidden value="">Manage My Account</option>
@@ -54,7 +57,7 @@ const Navbar = () => {
                 <img src="/public/images/hamburger.png" className='menu-hamburger' alt="hamburgerlogo" onClick={() => setIsHamburgerOpen(!isHamrburgerOpen)} />
                 <div className='navbar-menu-items-small-screens'>    
                     <p className='navbar-items-small-screens'>Login/Signup</p>
-                    <p className='navbar-items-small-screens'>My Cases</p>
+                    <p className='navbar-items-small-screens'> <Link to="my-cases">My cases</Link> </p>
                     <select className='navbar-items-small-screens navbar-dropdown-small-screen'>
                         <option className='navbar-dropdown-item-small-screen' hidden value="">Manage My Account</option>
                         <option className='navbar-dropdown-item-small-screen' value="1">Change or Recover Password</option>

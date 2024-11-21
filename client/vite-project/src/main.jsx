@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import MyCases from './pages/Home/MyCases/MyCases';
+import MyCases from './pages/MyCases/MyCases';
 
 
 {/*Client side routing using react router dom */}
