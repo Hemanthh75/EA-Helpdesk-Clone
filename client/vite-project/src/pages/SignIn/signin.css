@@ -1,0 +1,91 @@
+.sign-in-container{
+    height: 100vh;
+    background-color: rgb(0, 0, 41);
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.sign-in-logo{
+    height: 64px;
+    width: 64px;
+}
+
+.sign-in-panel-heading{
+    font-size: 24px;
+    margin: 0px 0px 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.social-logins{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    
+    
+}
+.social-login-logo{
+    height: 48px;
+    width: 48px;
+    margin: 8px;
+}
+@media screen and  (min-width:1024px) {
+    .sign-in-wrapper{
+        height: 603.31px;
+        width: 400px;
+        background-color: blue;
+    }
+
+    .sign-in-logo{
+        margin: 0px 168px 24px;
+    }
+}
+@media  (min-width:768px) and (max-width:1023px) {
+    .sign-in-wrapper{
+        height: 579.31px;
+        width: 400px;
+        background-color: blue;
+    }
+
+    .sign-in-logo{
+        margin: 0px 168px 24px;
+    }
+}
+
+@media  (min-width: 425px) and (max-width: 767px) {
+    .sign-in-wrapper{
+        height: 623.25px;
+        width: 377px;
+        background-color: blue;
+    }
+
+    .sign-in-logo{
+        margin: 0px 156.5px 24px;
+    }
+}
+
+@media  (min-width: 375px) and (max-width: 424px) {
+    .sign-in-wrapper{
+        height: 623.25px;
+        width: 327px;
+        background-color: blue;
+    }
+
+    .sign-in-logo{
+        margin: 0px 131.5px 24px;
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 374px) {
+    .sign-in-wrapper{
+        height: 700px;
+        width: 272px;
+        background-color: blue;
+    }
+
+    .sign-in-logo{
+        margin: 0px 104px 24px;
+    }
+}

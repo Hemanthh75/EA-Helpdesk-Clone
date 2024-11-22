@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -13,6 +13,21 @@ const Navbar = () => {
         event.preventDefault();
         setIsHamburgerOpen(true);
         console.log(isHamrburgerOpen)
+    }
+
+
+
+    {/*function for dropdown navigation */}
+    const navigate = useNavigate();
+
+    const handledropdownchange = (event) => {
+        //console.log(event)
+        const selectedvalue = event.target.value;
+        console.log(selectedvalue);
+
+        if(selectedvalue){
+            navigate(selectedvalue)
+        }
     }
 
 
@@ -30,19 +45,19 @@ const Navbar = () => {
                    <Link to="my-cases">My cases</Link>   {/*Linking my cases path */}
                 </span>
 
-                <select className='navbar-items navbar-dropdown'>
+                <select className='navbar-items navbar-dropdown' onChange={handledropdownchange}>
                     <option className='navbar-dropdown-item' hidden value="">Manage My Account</option>
-                    <option className='navbar-dropdown-item' value="1">Change or Recover Password</option>
-                    <option className='navbar-dropdown-item' value="2">Change Email Address</option>
-                    <option className='navbar-dropdown-item' value="3">Order Management</option>
-                    <option className='navbar-dropdown-item' value="4">Redeem a Code</option>
-                    <option className='navbar-dropdown-item' value="5">Account Security</option>
-                    <option className='navbar-dropdown-item' value="6">Link or Unlink my EA Account</option>
-                    <option className='navbar-dropdown-item' value="7">My ban History</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Change or Recover Password</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Change Email Address</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Order Management</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Redeem a Code</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Account Security</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">Link or Unlink my EA Account</option>
+                    <option className='navbar-dropdown-item' value="/sign-in">My ban History</option>
                 </select>
 
                 <span className='navbar-items navbar-login'>Login/</span>
-                <span className='navbar-items navbar-signup'>Signup</span>
+                <span className='navbar-items navbar-signup'><Link to="sign-in">Signup</Link></span>
         </div>
 
 

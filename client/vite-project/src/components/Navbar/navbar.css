@@ -18,6 +18,9 @@
     cursor: pointer;   
 }
 
+.navbar-items:hover {
+    color: red;
+}
 
 
 .hamburger-icon-navbar{

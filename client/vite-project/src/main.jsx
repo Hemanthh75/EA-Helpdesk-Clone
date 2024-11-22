@@ -4,6 +4,7 @@ import './index.css'
 import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MyCases from './pages/MyCases/MyCases';
+import SignIn from './pages/SignIn/SignIn';
 
 
 {/*Client side routing using react router dom */}
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
     {
       path: "my-cases",
       element: <MyCases />
+    },
+
+    {
+      path: "sign-in",
+      element: <SignIn />
     }
 ])
 
