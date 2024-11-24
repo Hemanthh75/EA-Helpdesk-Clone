@@ -21,9 +21,12 @@
 
 .social-logins{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    padding: 12px;
-    
+    padding: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
     
 }
 .social-login-logo{
@@ -31,11 +34,109 @@
     width: 48px;
     margin: 8px;
 }
+
+.social-logins-divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A9A9A9;
+    margin-top: 20px;
+}
+
+.social-logins-divider::before,
+.social-logins-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #A9A9A9;
+    margin: 0 10px;
+}
+
+.social-logins-divider span {
+    font-size: 14px; 
+    font-weight: 400; 
+  }
+
+
+
+form label{
+    color:  white;
+}
+
+.signin-form{
+    width: 100%;
+    height: 197.55px;
+    margin-top: 20px;
+}
+
+.sigin-phone-email-label{
+    font-size: 12px;
+}
+
+
+
+
+.sigin-page-next-btn, .sigin-input, .sigin-in-page-create-btn{
+    height: 48px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sigin-input{
+    background-color: #141724;
+    border: 1px solid gray;
+    padding: 0px 0px 0px 12px;
+
+}
+
+.sigin-page-next-btn{
+    margin-top: 15px;
+    background-color: #235fe3;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.sigin-checkbox{
+    display: flex;
+}
+
+.signin-checkbox-input{
+    width: 20px;
+    height: 20px;
+}
+
+.sigin-checkbox label{
+    padding-left: 10px;
+    padding-top: 12px;
+}
+
+.sigin-forgot-newacc a{
+    color: #235fe3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 19px;
+}
+
+.sigin-in-page-create-btn{
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #235fe3;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
 @media screen and  (min-width:1024px) {
     .sign-in-wrapper{
         height: 603.31px;
         width: 400px;
-        background-color: blue;
+        border-radius: 5px;
     }
 
     .sign-in-logo{
@@ -46,7 +147,6 @@
     .sign-in-wrapper{
         height: 579.31px;
         width: 400px;
-        background-color: blue;
     }
 
     .sign-in-logo{
@@ -58,9 +158,12 @@
     .sign-in-wrapper{
         height: 623.25px;
         width: 377px;
-        background-color: blue;
     }
 
+    .social-logins{
+        height: 128px;
+        width: 377px;
+    }
     .sign-in-logo{
         margin: 0px 156.5px 24px;
     }
@@ -70,7 +173,6 @@
     .sign-in-wrapper{
         height: 623.25px;
         width: 327px;
-        background-color: blue;
     }
 
     .sign-in-logo{
@@ -82,10 +184,11 @@
     .sign-in-wrapper{
         height: 700px;
         width: 272px;
-        background-color: blue;
     }
 
     .sign-in-logo{
         margin: 0px 104px 24px;
     }
+
+
 }

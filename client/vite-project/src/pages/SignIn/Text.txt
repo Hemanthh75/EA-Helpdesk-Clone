@@ -1,0 +1,95 @@
+                <form className="social-logins-signup-form">
+                    
+                    <label className="social-logins-signup-label">COUNTRY/REGION</label>
+                    <div className="social-logins-signup-country">
+                        <select className="social-logins-signup-dropdown">
+                            <option value="1">India</option>
+                            <option value="2">Indonesia</option>
+                        </select>
+                    </div>
+                  
+
+                    <label className="social-logins-signup-label">DATE OF BIRTH</label>
+                    <div className="social-logins-signup-dob">
+                        <select className="social-logins-signup-dob-month" name="" id="">
+                            <option value="1" hidden>Month</option>
+                            <option value="2">January</option>
+                        </select>
+                        <select className="social-logins-signup-dob-date" name="" id="">
+                            <option value="1" hidden>Date</option>
+                            <option value="2">1</option>
+                        </select>
+                        <select className="social-logins-signup-dob-year" name="" id="">
+                            <option value="1" hidden>Year</option>
+                            <option value="2">2024</option>
+                        </select>
+                    </div>
+
+                    <button className="social-logins-signup-next-button">Next</button>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                .social-logins-signup-label{
+    width: 100%;
+}
+
+.social-logins-signup-form{
+    width: 100%;
+    margin-top: 20px;
+    height: 235.09px;
+}
+
+.social-logins-signup-dob{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-logins-signup-form select{
+   height: 45px;
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+.social-logins-signup-country select{
+    width: 100%;
+}
+
+.social-logins-signup-dob-month{
+    width: 40%;
+}
+
+
+.social-logins-signup-dob-year, .social-logins-signup-dob-date{
+    width: 25%;
+}
+
+.social-logins-signup-dob{
+    padding-left: 10px;
+}
+
+.social-logins-signup-next-button{
+    width: 100%;
+    height: 48px;
+}
