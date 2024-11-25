@@ -1,7 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './signin.css'
 
 const SignIn = () => {
+    
+
+    const[inputValue, setInputValue] = useState("");
+    const[dropdown, setDropdown] = useState(false);
+    const[error, setError] = useState("")
+
+    useEffect(() => {
+        if( /^\d+$/.test(inputValue)){
+            setDropdown(true)
+        }else {
+            setDropdown(false)
+        }
+
+        //console.log(inputValue, dropdown)
+    },[inputValue])
+
+
+    
+
+    const handleChange = (event) =>{
+           event.preventDefault();
+           const value = event.target.value;
+           setInputValue(value)
+    }
+
+    const handleNext = (event) => {
+        event.preventDefault();
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(!dropdown && !emailRegex.test(inputValue)){
+            setError("Email address is invalid")
+        }else if(dropdown && inputValue.length <10){
+            setError("Phone number is invalid")
+        }else{
+            setError("");
+            alert("form submitted")
+        }
+    }
+
+  
     return(
         <div className="sign-in-container">
             <div className="sign-in-wrapper">
@@ -29,16 +70,76 @@ const SignIn = () => {
                 </div>
                 
                 <form action="" className="signin-form">
+
                     <label className="sigin-phone-email-label">PHONE OR EMAIL</label>
-                    <input type="text" placeholder="Enter your phone or email" className="sigin-input"/>
+
+                    {/*Developing the dropdown functionality
+                    {dropdown ? 
+                    <div className="sigin-mobile">
+                        <select 
+                             className="sigin-mobile-dropdown" 
+                             style={{color: "white"}}
+                        >
+                            <option value="1">USA (+1)</option>
+                            <option value="91">IND (+91)</option>
+                        </select>
+                        <input
+                        type="text"
+                        value={inputValue} 
+                        placeholder="Enter your phone or email"
+                        className="sigin-input"
+                        onChange={handleChange}
+                        style={{ color: "white" }}
+                        />
+
+                    </div>  :
+                    
+                        <input
+                        type="email"
+                        value={inputValue} 
+                        placeholder="Enter your phone or email"
+                        className="sigin-input"
+                        onChange={handleChange}
+                        style={{ color: "white" }}
+                        />}*/}
+                     
+
+                       <div className="sigin-mobile">
+                                {dropdown && (
+                                <select
+                                    className="sigin-mobile-dropdown"
+                                    style={{ color: "white" }}
+                                >
+                                    <option value="1">USA (+1)</option>
+                                    <option value="91">IND (+91)</option>
+                                </select>
+                                )}
+                                <input
+                                type="text"
+                                value={inputValue} 
+                                placeholder="Enter your phone or email"
+                                className="sigin-input"
+                                onChange={handleChange}
+                                style={{ color: "white" }}
+                                />
+                         </div>
+                        
+                      
+
+
                     <div className="sigin-checkbox">
                         <input type="checkbox"  className="signin-checkbox-input"/>
                         <label>Remember Me</label>
                     </div>
 
-                    <button className="sigin-page-next-btn">NEXT</button>
+                    <button className="sigin-page-next-btn" onClick={handleNext}>NEXT</button>
+                      {/*Showing error message */}
+    
+                      
                     
                 </form>
+
+                {error && <div className="error-message" style={{color: "red"}}>{error.toUpperCase()}</div>}
 
                 <div className="sigin-forgot-newacc">
                     <a href="" >Forgot yout password, or need to create a new one?</a>

@@ -56,8 +56,8 @@ const Navbar = () => {
                     <option className='navbar-dropdown-item' value="/sign-in">My ban History</option>
                 </select>
 
-                <span className='navbar-items navbar-login'>Login/</span>
-                <span className='navbar-items navbar-signup'><Link to="sign-in">Signup</Link></span>
+                <span className='navbar-items navbar-login'><Link to="sign-in">Login/</Link></span>
+                <span className='navbar-items navbar-signup'>Signup</span>
         </div>
 
 

@@ -70,6 +70,7 @@ form label{
 
 .sigin-phone-email-label{
     font-size: 12px;
+    font-weight: bold;
 }
 
 
@@ -101,16 +102,27 @@ form label{
 
 .sigin-checkbox{
     display: flex;
+    
 }
 
 .signin-checkbox-input{
     width: 20px;
     height: 20px;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.sigin-forgot-newacc a:hover{
+    border-bottom: 1px solid #235fe3;
 }
 
 .sigin-checkbox label{
     padding-left: 10px;
     padding-top: 12px;
+    cursor: pointer;
 }
 
 .sigin-forgot-newacc a{
@@ -131,6 +143,32 @@ form label{
     font-weight: bold;
 }
 
+.sigin-input:focus{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.social-login-logo:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+
+/*Styling dropdowns for mobile numbers*/
+.sigin-mobile{
+    display: flex;
+}
+
+.sigin-mobile-dropdown{
+    border: none;
+    background-color: #141724;
+    border: 1px solid gray;
+    border-right: none;
+    padding: 0px 0px 0px 12px;
+    height: 48px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 
 @media screen and  (min-width:1024px) {
     .sign-in-wrapper{
@@ -145,7 +183,7 @@ form label{
 }
 @media  (min-width:768px) and (max-width:1023px) {
     .sign-in-wrapper{
-        height: 579.31px;
+        height: 663.25px;
         width: 400px;
     }
 
@@ -156,7 +194,7 @@ form label{
 
 @media  (min-width: 425px) and (max-width: 767px) {
     .sign-in-wrapper{
-        height: 623.25px;
+        height: 663.25px;
         width: 377px;
     }
 
@@ -171,7 +209,7 @@ form label{
 
 @media  (min-width: 375px) and (max-width: 424px) {
     .sign-in-wrapper{
-        height: 623.25px;
+        height: 663.25px;
         width: 327px;
     }
 
