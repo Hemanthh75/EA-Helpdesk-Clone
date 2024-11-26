@@ -160,14 +160,16 @@ button{
 }
 
 .sigin-mobile-dropdown{
+    width: 40%;
     border: none;
     background-color: #141724;
     border: 1px solid gray;
     border-right: none;
-    padding: 0px 0px 0px 12px;
+    padding: 10px 10px;
     height: 48px;
     margin-top: 10px;
     border-radius: 5px;
+    display: flex;
 }
 
 @media screen and  (min-width:1024px) {

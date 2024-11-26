@@ -1,34 +1,63 @@
 import React, { useEffect, useState } from "react";
-import './signin.css'
+import './signin.css';
+import Countries from "./Countries/Countries";
 
 const SignIn = () => {
     
 
     const[inputValue, setInputValue] = useState("");
     const[dropdown, setDropdown] = useState(false);
-    const[error, setError] = useState("")
+    const[error, setError] = useState("");
+    const[countriesList, setCountriesList] = useState(false);
+    const[dataFromChild, setDataFromChild] = useState({});
+    
+
+
+
+   //setting the inputvalue
+    const handleChange = (event) =>{
+        event.preventDefault();
+        const value = event.target.value;
+        setInputValue(value)
+    }
+
 
     useEffect(() => {
+
+        //Condition to check if the input value is purely numbers or consisting of strings.
         if( /^\d+$/.test(inputValue)){
-            setDropdown(true)
+            setDropdown(true);
+            
         }else {
-            setDropdown(false)
+            setDropdown(false);
+            setCountriesList(false)
         }
 
         //console.log(inputValue, dropdown)
-    },[inputValue])
+    },[inputValue]);
+
+
+
+    //setting countrieslist state
+
+    const handleCountriesList = (event) => {
+        event.preventDefault();
+        setCountriesList(!countriesList);
+    }
+
+    useEffect(() => {
+        console.log(countriesList);
+    },[countriesList])
+
 
 
     
-
-    const handleChange = (event) =>{
-           event.preventDefault();
-           const value = event.target.value;
-           setInputValue(value)
-    }
+  //Function which triggers after clicking next button.
 
     const handleNext = (event) => {
+
         event.preventDefault();
+
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -41,6 +70,20 @@ const SignIn = () => {
             alert("form submitted")
         }
     }
+
+
+    const handleDataFromChild = (data) => {
+        if(data){
+            setDataFromChild(data);
+        }
+        setCountriesList(false)
+    }
+
+    console.log("Hey Im Parent:", dataFromChild)
+
+
+
+    
 
   
     return(
@@ -72,47 +115,14 @@ const SignIn = () => {
                 <form action="" className="signin-form">
 
                     <label className="sigin-phone-email-label">PHONE OR EMAIL</label>
-
-                    {/*Developing the dropdown functionality
-                    {dropdown ? 
-                    <div className="sigin-mobile">
-                        <select 
-                             className="sigin-mobile-dropdown" 
-                             style={{color: "white"}}
-                        >
-                            <option value="1">USA (+1)</option>
-                            <option value="91">IND (+91)</option>
-                        </select>
-                        <input
-                        type="text"
-                        value={inputValue} 
-                        placeholder="Enter your phone or email"
-                        className="sigin-input"
-                        onChange={handleChange}
-                        style={{ color: "white" }}
-                        />
-
-                    </div>  :
-                    
-                        <input
-                        type="email"
-                        value={inputValue} 
-                        placeholder="Enter your phone or email"
-                        className="sigin-input"
-                        onChange={handleChange}
-                        style={{ color: "white" }}
-                        />}*/}
                      
 
                        <div className="sigin-mobile">
                                 {dropdown && (
-                                <select
-                                    className="sigin-mobile-dropdown"
-                                    style={{ color: "white" }}
-                                >
-                                    <option value="1">USA (+1)</option>
-                                    <option value="91">IND (+91)</option>
-                                </select>
+                                    <div className="sigin-mobile-dropdown" onClick={handleCountriesList}>
+                                        <img  src={dataFromChild.src} style={{width: "32px", height: "24px"}}/>
+                                        <span style={{color:"white", padding:"5px 5px"}}>{dataFromChild.cc}</span>
+                                    </div>
                                 )}
                                 <input
                                 type="text"
@@ -124,7 +134,7 @@ const SignIn = () => {
                                 />
                          </div>
                         
-                      
+                    {countriesList && <div style={{zIndex: 999}}><Countries sendDataToParent = {handleDataFromChild}/></div>}
 
 
                     <div className="sigin-checkbox">
