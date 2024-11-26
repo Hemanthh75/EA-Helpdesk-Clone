@@ -9,7 +9,7 @@ const SignIn = () => {
     const[dropdown, setDropdown] = useState(false);
     const[error, setError] = useState("");
     const[countriesList, setCountriesList] = useState(false);
-    const[dataFromChild, setDataFromChild] = useState({});
+    const[dataFromChild, setDataFromChild] = useState({src:"https://flagcdn.com/w320/in.png", cc:"+91"});
     
 
 
@@ -73,13 +73,11 @@ const SignIn = () => {
 
 
     const handleDataFromChild = (data) => {
-        if(data){
-            setDataFromChild(data);
-        }
-        setCountriesList(false)
+        setDataFromChild(data);
+        setCountriesList(false);
     }
 
-    console.log("Hey Im Parent:", dataFromChild)
+   // console.log("Hey Im Parent:", dataFromChild)
 
 
 
@@ -121,7 +119,7 @@ const SignIn = () => {
                                 {dropdown && (
                                     <div className="sigin-mobile-dropdown" onClick={handleCountriesList}>
                                         <img  src={dataFromChild.src} style={{width: "32px", height: "24px"}}/>
-                                        <span style={{color:"white", padding:"5px 5px"}}>{dataFromChild.cc}</span>
+                                        <span style={{color:"white", padding:"5px 5px", overflow:"hidden"}}>{dataFromChild.cc}</span>
                                     </div>
                                 )}
                                 <input
@@ -134,7 +132,7 @@ const SignIn = () => {
                                 />
                          </div>
                         
-                    {countriesList && <div style={{zIndex: 999}}><Countries sendDataToParent = {handleDataFromChild}/></div>}
+                    {countriesList && <div style={{zIndex: 999}}><Countries sendDataToParent={handleDataFromChild}/></div>}
 
 
                     <div className="sigin-checkbox">

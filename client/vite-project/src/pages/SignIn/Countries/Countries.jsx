@@ -26,35 +26,17 @@ const Countries = ({sendDataToParent}) => {
     },[]);
 
 
-    const handleListClick = (event) => {
-        // Find the nearest parent 'li' element
-
-        const listItem = event.target.closest("li.countries-list-item");
-    
-        if (listItem) {
-            // Find the image inside the list item
-            const imgElement = listItem.querySelector("img");
-            const countryCode = listItem.querySelector(".country-code").textContent
-            
-            if (imgElement) {
-                const imageSrc = imgElement.src; // Get the image source
-
-                setSelectedCountry({
-                    src: imageSrc,
-                    cc: countryCode
-                })
-              //  console.log("Image source: ", imageSrc);
-              //  console.log("Country code: ", countryCode);
-            } else {
-                console.log("No image found in this list item.");
-            }
-        } else {
-            console.log("Click outside list items.");
-        }
-
-
-        sendDataToParent(selectedCountry);
+    const handleListClick = (country) => {
+        sendDataToParent({
+            src: country.flags.png,
+            cc: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : "")
+          });
     };
+
+
+  
+
+
     //console.log(selectedCountry)
 
     //console.log(countries)
@@ -63,7 +45,7 @@ const Countries = ({sendDataToParent}) => {
         <div className="countries-wrapper">
             <ul className="countries-list">
                 {countries.map((country, index) => {
-                    return <li key={index}  className="countries-list-item" onClick={handleListClick}>   
+                    return <li key={index}  className="countries-list-item" onClick={() => handleListClick(country)}>   
                               <img src={country.flags.png} style={{width:"32px", height:"24px"}}/> 
                                    <span className="countries-name-code">{country.name.common} 
                                      (<span className="country-code">{country.idd.root}{(country.idd.suffixes[0])}</span>)
