@@ -57,7 +57,7 @@ const Navbar = () => {
                 </select>
 
                 <span className='navbar-items navbar-login'><Link to="sign-in">Login/</Link></span>
-                <span className='navbar-items navbar-signup'>Signup</span>
+                <span className='navbar-items navbar-signup'><Link to="sign-up">Signup</Link></span>
         </div>
 
 
@@ -71,7 +71,7 @@ const Navbar = () => {
             <div className='navbar-menu-small-screens'>
                 <img src="/public/images/hamburger.png" className='menu-hamburger' alt="hamburgerlogo" onClick={() => setIsHamburgerOpen(!isHamrburgerOpen)} />
                 <div className='navbar-menu-items-small-screens'>    
-                    <p className='navbar-items-small-screens'>Login/Signup</p>
+                    <p className='navbar-items-small-screens'><Link to="sign-in">Login/</Link>/<Link to="sign-up">Signup</Link></p>
                     <p className='navbar-items-small-screens'> <Link to="my-cases">My cases</Link> </p>
                     <select className='navbar-items-small-screens navbar-dropdown-small-screen'>
                         <option className='navbar-dropdown-item-small-screen' hidden value="">Manage My Account</option>

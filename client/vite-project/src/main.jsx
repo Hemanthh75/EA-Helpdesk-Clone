@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MyCases from './pages/MyCases/MyCases';
 import SignIn from './pages/SignIn/SignIn';
+import SignUp from './pages/SignUp/SignUp';
 
 
 {/*Client side routing using react router dom */}
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
     {
       path: "sign-in",
       element: <SignIn />
+    },
+
+    {
+      path: "sign-up",
+      element: <SignUp />
     }
 ])
 
