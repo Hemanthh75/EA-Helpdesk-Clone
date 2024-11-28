@@ -121,7 +121,7 @@
   border-radius: 5px;
 }
 
-select {
+.social-logins-signup-form select {
   background-color: #141724;
   border: 1px solid gray;
   padding: 0px 0px 0px 12px;

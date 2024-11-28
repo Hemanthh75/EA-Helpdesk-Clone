@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./signin.css";
 import Countries from "./Countries/Countries";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [inputValue, setInputValue] = useState("");
@@ -11,6 +12,8 @@ const SignIn = () => {
     src: "https://flagcdn.com/w320/in.png",
     cc: "+91",
   });
+
+  const navigate = useNavigate();
 
   //setting the inputvalue
   const handleChange = (event) => {
@@ -55,7 +58,7 @@ const SignIn = () => {
       setError("Phone number is invalid");
     } else {
       setError("");
-      alert("form submitted");
+      navigate("/sign-in-password");
     }
   };
 

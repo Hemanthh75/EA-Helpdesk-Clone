@@ -3,7 +3,32 @@ import "./signup.css";
 import axios from "axios";
 
 const SignUp = () => {
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: currentYear - 1899 }, (_, i) => {
+    return currentYear - i;
+  });
+
+  console.log(years);
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   const [countries, setCountries] = useState([]);
+  const [selectedYear, setSelectedYear] = useState(currentYear);
+  const [selectedMonth, setSelectedMonth] = useState(1);
+  const [days, setDays] = useState([]);
 
   //Fetching the countriesss
 
@@ -15,13 +40,28 @@ const SignUp = () => {
 
       const data = response.data;
       data.sort((a, b) => {
-        a.name.common.localeCompare(b.name.common);
+        return a.name.common.localeCompare(b.name.common);
       });
-      console.log(data);
+      setCountries(data);
     };
 
     fetchCountries();
   }, []);
+
+  //Date, year and month dropdown functionality
+
+  //function to calculate number of days based on
+
+  const calculateDays = (year, month) => {
+    const daysInMonth = new Date(year, month, 0).getDate(); //This will return the last day of the month.
+    return Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  };
+
+  useEffect(() => {
+    setDays(calculateDays(selectedYear, selectedMonth));
+  }, [selectedYear, selectedMonth]);
+
+  console.log(days);
 
   return (
     <div className="sign-up-container">
@@ -77,30 +117,59 @@ const SignUp = () => {
             <label className="social-logins-signup-label">COUNTRY/REGION</label>
             <div className="social-logins-signup-country">
               <select className="social-logins-signup-dropdown">
-                <option value="1">India</option>
-                <option value="2">Indonesia</option>
+                {countries &&
+                  countries.map((country, index) => {
+                    return (
+                      <option
+                        key={index}
+                        style={{ backgroundColor: "white", color: "black" }}
+                      >
+                        {country.name.common}
+                      </option>
+                    );
+                  })}
               </select>
             </div>
 
             <label className="social-logins-signup-label">DATE OF BIRTH</label>
             <div className="social-logins-signup-dob">
-              <select className="social-logins-signup-dob-month" name="" id="">
-                <option value="1" hidden>
-                  Month
-                </option>
-                <option value="2">January</option>
+              <select
+                className="social-logins-signup-dob-month"
+                value={selectedMonth}
+                onChange={(e) => setSelectedMonth(parseInt(e.target.value))}
+              >
+                {months.map((month, index) => {
+                  return (
+                    <option key={index} value={index + 1}>
+                      {month}
+                    </option>
+                  );
+                })}
               </select>
               <select className="social-logins-signup-dob-date" name="" id="">
-                <option value="1" hidden>
-                  Date
-                </option>
-                <option value="2">1</option>
+                {days &&
+                  days.map((day) => {
+                    return (
+                      <option key={day} value={day}>
+                        {day}
+                      </option>
+                    );
+                  })}
               </select>
-              <select className="social-logins-signup-dob-year" name="" id="">
-                <option value="1" hidden>
-                  Year
-                </option>
-                <option value="2">2024</option>
+              <select
+                className="social-logins-signup-dob-year"
+                name=""
+                id=""
+                onChange={(e) => setSelectedYear(parseInt(e.target.value))}
+              >
+                {years &&
+                  years.map((year, index) => {
+                    return (
+                      <option key={year} value={year}>
+                        {year}
+                      </option>
+                    );
+                  })}
               </select>
             </div>
 
