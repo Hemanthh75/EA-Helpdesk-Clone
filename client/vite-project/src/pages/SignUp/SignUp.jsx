@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./signup.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const currentYear = new Date().getFullYear();
@@ -48,6 +49,8 @@ const SignUp = () => {
     fetchCountries();
   }, []);
 
+  const navigate = useNavigate();
+
   //Date, year and month dropdown functionality
 
   //function to calculate number of days based on
@@ -66,6 +69,16 @@ const SignUp = () => {
   const age = currentYear - selectedYear;
   //console.log(selectedYear);
   //console.log(age);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (age > 18) {
+      navigate("/eligible-sign-up");
+    } else {
+      navigate("/ineligible-sign-up");
+    }
+  };
 
   return (
     <div className="sign-up-container">
@@ -148,7 +161,7 @@ const SignUp = () => {
             <span>or</span>
           </div>
 
-          <form className="social-logins-signup-form">
+          <form className="social-logins-signup-form" onSubmit={handleSubmit}>
             <label className="social-logins-signup-label">COUNTRY/REGION</label>
             <div className="social-logins-signup-country">
               <select className="social-logins-signup-dropdown">

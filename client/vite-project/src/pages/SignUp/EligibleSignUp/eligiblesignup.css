@@ -1,0 +1,39 @@
+.eligible-sign-up-form {
+  height: 450px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.eligible-sign-up-form p {
+  color: #fff;
+}
+
+.eligible-sign-up-form input,
+button {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.eligible-sign-up-form input {
+  background-color: #141724;
+  border: 1px solid gray;
+  padding: 0px 0px 0px 12px;
+}
+
+.eligible-sign-up-form button {
+  margin-top: 15px;
+  background-color: #235fe3;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.eligible-sign-up-password-input {
+  margin-bottom: 35px;
+}
+
+.eligible-sign-up-password {
+  margin-top: 15px;
+}
