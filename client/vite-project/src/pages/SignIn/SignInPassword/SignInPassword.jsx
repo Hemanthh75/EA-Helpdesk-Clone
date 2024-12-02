@@ -46,7 +46,7 @@ const SignInPassword = () => {
     <div className="sign-in-pass-container">
       <div className="sign-in-pass-wrapper">
         <button
-          className="sigin-pass-back-btn"
+          className="signin-pass-back-btn"
           onClick={() => navigate("/sign-in")}
         >
           &lt; BACK

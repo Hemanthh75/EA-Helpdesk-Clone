@@ -1,15 +1,26 @@
+.sign-in-pass-wrapper {
+  height: 800px;
+}
+
 .eligible-sign-up-form {
-  height: 450px;
+  height: 550px;
   width: 100%;
   margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sign-in-pass-wrapper {
+  overflow: hidden;
 }
 
 .eligible-sign-up-form p {
   color: #fff;
+  font-size: 16px;
 }
 
 .eligible-sign-up-form input,
-button {
+.eligible-sign-up-form button {
   width: 100%;
   height: 48px;
   border-radius: 5px;
@@ -19,21 +30,40 @@ button {
   background-color: #141724;
   border: 1px solid gray;
   padding: 0px 0px 0px 12px;
+  color: #fff;
 }
 
-.eligible-sign-up-form button {
-  margin-top: 15px;
+.eligible-sign-up-form input:focus {
+  border: 2px solid #fff;
+}
+
+.active-next-btn {
   background-color: #235fe3;
   border: none;
   color: #ffffff;
-  font-size: 16px;
   font-weight: bold;
 }
 
-.eligible-sign-up-password-input {
-  margin-bottom: 35px;
+.inactive-next-button {
+  background-color: rgb(59, 59, 59);
+  color: #908e97;
+  font-weight: bold;
+  border: none;
 }
 
 .eligible-sign-up-password {
   margin-top: 15px;
+}
+
+.sign-up-password-checker {
+  background-color: #141724;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.sign-up-password-checker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
