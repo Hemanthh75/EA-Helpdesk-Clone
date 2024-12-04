@@ -28,8 +28,9 @@ const SignUp = () => {
 
   const [countries, setCountries] = useState([]);
   const [selectedYear, setSelectedYear] = useState(currentYear);
-  const [selectedMonth, setSelectedMonth] = useState(1);
+  const [selectedMonth, setSelectedMonth] = useState(null);
   const [days, setDays] = useState([]);
+  const [isActive, setIsActive] = useState(false);
 
   //Fetching the countriesss
 
@@ -61,6 +62,9 @@ const SignUp = () => {
   };
 
   useEffect(() => {
+    if (selectedMonth) {
+      setIsActive(true);
+    }
     setDays(calculateDays(selectedYear, selectedMonth));
   }, [selectedYear, selectedMonth]);
 
@@ -165,6 +169,9 @@ const SignUp = () => {
             <label className="social-logins-signup-label">COUNTRY/REGION</label>
             <div className="social-logins-signup-country">
               <select className="social-logins-signup-dropdown">
+                <option value="" disabled selected hidden>
+                  Country
+                </option>
                 {countries &&
                   countries.map((country, index) => {
                     return (
@@ -186,6 +193,9 @@ const SignUp = () => {
                 value={selectedMonth}
                 onChange={(e) => setSelectedMonth(parseInt(e.target.value))}
               >
+                <option value="" disabled selected hidden>
+                  Month
+                </option>
                 {months.map((month, index) => {
                   return (
                     <option key={index} value={index + 1}>
@@ -195,6 +205,9 @@ const SignUp = () => {
                 })}
               </select>
               <select className="social-logins-signup-dob-date" name="" id="">
+                <option value="" disabled selected hidden>
+                  Day
+                </option>
                 {days &&
                   days.map((day) => {
                     return (
@@ -210,6 +223,9 @@ const SignUp = () => {
                 id=""
                 onChange={(e) => setSelectedYear(parseInt(e.target.value))}
               >
+                <option value="" disabled selected hidden>
+                  Year
+                </option>
                 {years &&
                   years.map((year, index) => {
                     return (
@@ -221,7 +237,15 @@ const SignUp = () => {
               </select>
             </div>
 
-            <button className="social-logins-signup-next-button">NEXT</button>
+            <button
+              className={
+                isActive
+                  ? "social-logins-signup-next-button"
+                  : "social-logins-signup-next-button-inactive"
+              }
+            >
+              NEXT
+            </button>
           </form>
 
           <div className="sign-up-bottom-links">
