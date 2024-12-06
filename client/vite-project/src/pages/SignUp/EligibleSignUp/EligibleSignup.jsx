@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./eligiblesignup.css";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { useNavigate } from "react-router-dom";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
 
 const EligibleSignup = () => {
   const [email, setEmail] = useState("");
@@ -11,12 +13,41 @@ const EligibleSignup = () => {
   const [isactive, setIsActive] = useState(false);
   const [passwordChecker, setPasswordChecker] = useState({
     characters: false,
-    upperCase: false,
     lowerCase: false,
+    upperCase: false,
     number: false,
   });
 
   const navigate = useNavigate();
+
+  const hasLowerCase = (str) => {
+    for (let char of str) {
+      if (char >= "a" && char <= "z") {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const hasUpperCase = (str) => {
+    for (let char of str) {
+      if (char >= "A" && char <= "Z") {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  const hasNumber = (str) => {
+    for (let char of str) {
+      if (!isNaN(char) && char !== " ") {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  console.log(hasNumber("H"));
 
   useEffect(() => {
     //Checking all fields are filled
@@ -26,14 +57,13 @@ const EligibleSignup = () => {
       setIsActive(true);
     }
 
-    //Checking the first password checking condition
-    if (password.length >= 8 && password.length <= 64) {
-      setPasswordChecker({ ...passwordChecker, characters: true });
-    } else {
-      setPasswordChecker({ ...passwordChecker, characters: false });
-    }
-
-    //Checking the second password checking condition:
+    setPasswordChecker((prev) => ({
+      ...prev,
+      characters: password.length >= 8 && password.length <= 64,
+      lowerCase: hasLowerCase(password),
+      upperCase: hasUpperCase(password),
+      number: hasNumber(password),
+    }));
   }, [email, password, eaid]);
 
   console.log(passwordChecker);
@@ -42,6 +72,12 @@ const EligibleSignup = () => {
     e.preventDefault();
   };
 
+  const handleNextbtn = (e) => {
+    e.preventDefault();
+    if (isactive) {
+      navigate("/t&c");
+    }
+  };
   return (
     <div className="sign-in-pass-container">
       <div className="sign-in-pass-wrapper">
@@ -93,7 +129,6 @@ const EligibleSignup = () => {
             className="eligible-sign-up-password-input"
             onChange={(e) => setPassword(e.target.value)}
             onFocus={(e) => setIsPassActive(true)}
-            onBlur={(e) => setIsPassActive(false)}
           />
 
           {isPassActive && (
@@ -104,14 +139,43 @@ const EligibleSignup = () => {
               <p style={{ color: "gray" }}>
                 Your password must contain the following:
               </p>
-              <p>{passwordChecker.characters ? "Yes" : "No"} 8-64 characters</p>
-              <p>At least 1 lowercase letter</p>
-              <p>At least 1 lowercase letter</p>
-              <p>At least 1 number</p>
+              <p>
+                {passwordChecker.characters ? (
+                  <CheckIcon style={{ color: "green" }} />
+                ) : (
+                  <CloseIcon style={{ color: "red" }} />
+                )}
+                8-64 characters
+              </p>
+              <p>
+                {passwordChecker.lowerCase ? (
+                  <CheckIcon style={{ color: "green" }} />
+                ) : (
+                  <CloseIcon style={{ color: "red" }} />
+                )}{" "}
+                At least 1 lowercase letter
+              </p>
+              <p>
+                {passwordChecker.upperCase ? (
+                  <CheckIcon style={{ color: "green" }} />
+                ) : (
+                  <CloseIcon style={{ color: "red" }} />
+                )}{" "}
+                At least 1 uppercase letter
+              </p>
+              <p>
+                {passwordChecker.number ? (
+                  <CheckIcon style={{ color: "green" }} />
+                ) : (
+                  <CloseIcon style={{ color: "red" }} />
+                )}{" "}
+                At least 1 number
+              </p>
             </div>
           )}
           <button
             className={isactive ? "active-next-btn" : "inactive-next-button"}
+            onClick={handleNextbtn}
           >
             NEXT
           </button>

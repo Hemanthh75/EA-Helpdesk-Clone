@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import SigInPassword from "./pages/SignIn/SignInPassword/SignInPassword";
 import EligibleSignup from "./pages/SignUp/EligibleSignUp/EligibleSignup";
 import IneligibleSignup from "./pages/SignUp/IneligibleSignUp/IneligibleSignUp";
+import TermsConditions from "./pages/SignUp/EligibleSignUp/TermsConditions/TermsConditions";
 
 {
   /*Client side routing using react router dom */
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
   {
     path: "ineligible-sign-up",
     element: <IneligibleSignup />,
+    exact: true,
+  },
+  {
+    path: "t&c",
+    element: <TermsConditions />,
     exact: true,
   },
 ]);

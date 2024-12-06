@@ -27,9 +27,11 @@ const SignUp = () => {
   ];
 
   const [countries, setCountries] = useState([]);
-  const [selectedYear, setSelectedYear] = useState(currentYear);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedYear, setSelectedYear] = useState(null);
   const [selectedMonth, setSelectedMonth] = useState(null);
   const [days, setDays] = useState([]);
+  const [selectedDay, setSelectedDay] = useState(null);
   const [isActive, setIsActive] = useState(false);
 
   //Fetching the countriesss
@@ -62,11 +64,16 @@ const SignUp = () => {
   };
 
   useEffect(() => {
-    if (selectedMonth) {
+    if (
+      selectedDay &&
+      selectedYear &&
+      selectedMonth &&
+      selectedCountry !== ""
+    ) {
       setIsActive(true);
     }
     setDays(calculateDays(selectedYear, selectedMonth));
-  }, [selectedYear, selectedMonth]);
+  }, [selectedYear, selectedMonth, selectedCountry, selectedDay]);
 
   //console.log(days);
 
@@ -168,7 +175,10 @@ const SignUp = () => {
           <form className="social-logins-signup-form" onSubmit={handleSubmit}>
             <label className="social-logins-signup-label">COUNTRY/REGION</label>
             <div className="social-logins-signup-country">
-              <select className="social-logins-signup-dropdown">
+              <select
+                className="social-logins-signup-dropdown"
+                onChange={(e) => setSelectedCountry(e.target.value)}
+              >
                 <option value="" disabled selected hidden>
                   Country
                 </option>
@@ -204,7 +214,12 @@ const SignUp = () => {
                   );
                 })}
               </select>
-              <select className="social-logins-signup-dob-date" name="" id="">
+              <select
+                className="social-logins-signup-dob-date"
+                name=""
+                id=""
+                onChange={(e) => setSelectedDay(e.target.value)}
+              >
                 <option value="" disabled selected hidden>
                   Day
                 </option>
@@ -243,6 +258,7 @@ const SignUp = () => {
                   ? "social-logins-signup-next-button"
                   : "social-logins-signup-next-button-inactive"
               }
+              disabled={!isActive}
             >
               NEXT
             </button>
