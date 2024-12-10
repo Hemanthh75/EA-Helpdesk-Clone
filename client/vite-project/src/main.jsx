@@ -10,6 +10,7 @@ import SigInPassword from "./pages/SignIn/SignInPassword/SignInPassword";
 import EligibleSignup from "./pages/SignUp/EligibleSignUp/EligibleSignup";
 import IneligibleSignup from "./pages/SignUp/IneligibleSignUp/IneligibleSignUp";
 import TermsConditions from "./pages/SignUp/EligibleSignUp/TermsConditions/TermsConditions";
+import BanHistory from "./pages/BanHistory/BanHistory";
 
 {
   /*Client side routing using react router dom */
@@ -60,6 +61,11 @@ const router = createBrowserRouter([
   {
     path: "t&c",
     element: <TermsConditions />,
+    exact: true,
+  },
+  {
+    path: "my-ban-history",
+    element: <BanHistory />,
     exact: true,
   },
 ]);

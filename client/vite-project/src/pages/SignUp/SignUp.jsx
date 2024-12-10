@@ -84,7 +84,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (age > 18) {
+    if (age > 12) {
       navigate("/eligible-sign-up");
     } else {
       navigate("/ineligible-sign-up");
