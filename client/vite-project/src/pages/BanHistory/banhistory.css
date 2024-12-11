@@ -1,0 +1,123 @@
+.ban-header {
+  background-color: #f3f3f3;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.ban-history-wrapper {
+  background-color: #dbe3f4;
+  border-radius: 5px;
+}
+
+.ban-history-wrapper a {
+  color: black;
+}
+
+.ban-history-login-btn {
+  width: 80.39px;
+  height: 40px;
+  background-color: #0059ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .ban-header {
+    margin-top: 40px;
+    height: 100px;
+    font-size: 20px;
+  }
+
+  .ban-history-wrapper {
+    width: 1156px;
+    height: 204px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    font-size: 17.5px;
+  }
+
+  .ban-history-login {
+    width: 1156px;
+    height: 74px;
+    margin: 30px 0px 0px;
+    margin: 40px auto 40px auto;
+    font-size: 17.5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ban-header {
+    margin-top: 80px;
+    height: 100px;
+    font-size: 20px;
+  }
+
+  .ban-history-wrapper {
+    width: 714.23px;
+    height: 228px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    font-size: 17.5px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .ban-header {
+    margin-top: 30px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .ban-history-wrapper {
+    width: 386.75px;
+    height: 348px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    font-size: 17.5px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .ban-header {
+    margin-top: 30px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .ban-history-wrapper {
+    width: 341.25px;
+    height: 372px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    font-size: 17.5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .ban-header {
+    margin-top: 30px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .ban-history-wrapper {
+    width: 291.19px;
+    height: 444px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    font-size: 17.5px;
+  }
+}

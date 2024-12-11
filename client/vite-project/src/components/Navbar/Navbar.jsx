@@ -44,7 +44,13 @@ const Navbar = () => {
       {/* Navbar for large screens */}
       <div className="navbar-non-logo-items">
         <span className="navbar-items navbar-text">
-          <Link to="/my-cases">My cases</Link> {/*Linking my cases path */}
+          <Link
+            to="/my-cases"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            My cases
+          </Link>{" "}
+          {/*Linking my cases path */}
         </span>
 
         <select
@@ -78,10 +84,20 @@ const Navbar = () => {
         </select>
 
         <span className="navbar-items navbar-login">
-          <Link to="/sign-in">Login/</Link>
+          <Link
+            to="/sign-in"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Login/
+          </Link>
         </span>
         <span className="navbar-items navbar-signup">
-          <Link to="/sign-up">Signup</Link>
+          <Link
+            to="/sign-up"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Signup
+          </Link>
         </span>
       </div>
 
