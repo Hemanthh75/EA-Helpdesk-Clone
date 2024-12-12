@@ -54,6 +54,14 @@ const BanHistory = () => {
         </p>
         <button className="ban-history-login-btn">Log in</button>
       </div>
+      <div className="ban-history-hr-container">
+        <hr className="ban-history-hr" />
+      </div>
+      <div className="ban-learn-more-container">
+        <h4>Learn more</h4>
+        <p>Get help from the community</p>
+        <p>Get info about your ban or suspension</p>
+      </div>
 
       <Footer />
     </>
