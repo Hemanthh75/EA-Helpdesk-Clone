@@ -2,13 +2,17 @@ import React from "react";
 import "./banhistory.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const BanHistory = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
       <div className="ban-header">
-        <h1 className="ban-header-text">My ban history</h1>
+        <div className="ban-header-text-container">
+          <h1 className="ban-header-text">My ban history</h1>
+        </div>
       </div>
       <div className="ban-history-wrapper">
         <p style={{ marginBottom: "20px" }}>
@@ -52,15 +56,36 @@ const BanHistory = () => {
         <p style={{ marginBottom: "10px" }}>
           Log in to see details about your bans and suspensions.
         </p>
-        <button className="ban-history-login-btn">Log in</button>
+        <button
+          className="ban-history-login-btn"
+          onClick={() => navigate("/sign-in")}
+        >
+          Log in
+        </button>
       </div>
       <div className="ban-history-hr-container">
         <hr className="ban-history-hr" />
       </div>
       <div className="ban-learn-more-container">
         <h4>Learn more</h4>
-        <p>Get help from the community</p>
-        <p>Get info about your ban or suspension</p>
+        <p className="ban-learn-more-text">
+          <span className="ban-learn-more-dot"></span>
+          <a
+            href="https://answers.ea.com/t5/EA-Services-General-Questions/bd-p/O-2"
+            target="_blank"
+          >
+            Get help from the community
+          </a>
+        </p>
+        <p className="ban-learn-more-text">
+          <span className="ban-learn-more-dot"></span>
+          <a
+            href="https://help.ea.com/en/help/account/information-about-locked-or-banned-or-suspended-accounts/"
+            target="_blank"
+          >
+            Get info about your ban or suspension
+          </a>
+        </p>
       </div>
 
       <Footer />

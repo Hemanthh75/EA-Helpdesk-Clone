@@ -1,7 +1,6 @@
 .ban-header {
   background-color: #f3f3f3;
   padding-top: 24px;
-  text-align: center;
 }
 
 .ban-history-wrapper {
@@ -29,11 +28,37 @@
   justify-content: center;
 }
 
+.ban-learn-more-container p {
+  padding-top: 20px;
+}
+
+.ban-learn-more-container a {
+  text-decoration: none;
+}
+
+.ban-learn-more-text {
+  display: flex;
+}
+
+.ban-learn-more-dot {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
 @media screen and (min-width: 1024px) {
   .ban-header {
     margin-top: 40px;
     height: 100px;
     font-size: 20px;
+  }
+
+  .ban-header-text-container {
+    width: 1156px;
+    margin: 0 auto;
   }
 
   .ban-history-wrapper {
@@ -58,6 +83,16 @@
     width: 1156px;
     color: gray;
   }
+
+  .ban-learn-more-container {
+    width: 1156px;
+    height: 204px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    font-size: 17.5px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -65,6 +100,11 @@
     margin-top: 80px;
     height: 100px;
     font-size: 20px;
+  }
+
+  .ban-header-text-container {
+    width: 714.23px;
+    margin: 0 auto;
   }
 
   .ban-history-wrapper {
@@ -89,6 +129,16 @@
     width: 714.23px;
     color: gray;
   }
+
+  .ban-learn-more-container {
+    width: 714.23px;
+    height: 158px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    font-size: 17.5px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
@@ -96,6 +146,11 @@
     margin-top: 30px;
     height: 80px;
     font-size: 12px;
+  }
+
+  .ban-header-text-container {
+    width: 386.75px;
+    margin: 0 auto;
   }
 
   .ban-history-wrapper {
@@ -120,6 +175,16 @@
     width: 386.75px;
     color: gray;
   }
+
+  .ban-learn-more-container {
+    width: 386.75px;
+    height: 148px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    font-size: 17.5px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -127,6 +192,11 @@
     margin-top: 30px;
     height: 80px;
     font-size: 12px;
+  }
+
+  .ban-header-text-container {
+    width: 341.25px;
+    margin: 0 auto;
   }
 
   .ban-history-wrapper {
@@ -150,6 +220,16 @@
     width: 341.25px;
     color: gray;
   }
+
+  .ban-learn-more-container {
+    width: 341.25px;
+    height: 138px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    font-size: 17.5px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -157,6 +237,11 @@
     margin-top: 30px;
     height: 80px;
     font-size: 12px;
+  }
+
+  .ban-header-text-container {
+    width: 291.19px;
+    margin: 0 auto;
   }
 
   .ban-history-wrapper {
@@ -181,5 +266,15 @@
   .ban-history-hr {
     width: 291.19px;
     color: gray;
+  }
+
+  .ban-learn-more-container {
+    width: 291.19px;
+    height: 138px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 40px auto 40px auto;
+    padding: 10px;
+    font-size: 17.5px;
   }
 }
