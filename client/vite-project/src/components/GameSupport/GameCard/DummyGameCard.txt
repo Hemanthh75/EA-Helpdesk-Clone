@@ -1,0 +1,117 @@
+import React from "react";
+import "./gamecards.css";
+import FeaturedProducts from "./FeaturedProducts";
+
+const DummyGameCards = () => {
+  return (
+    <div className="grid-container">
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+      <div className="grid-item">
+        <img
+          className="grid-item-image"
+          src="/public/images/Games/EaAccount.png"
+        />
+        <div className="grid-item-text">EA Account</div>
+      </div>
+    </div>
+  );
+};
+
+export default DummyGameCards;

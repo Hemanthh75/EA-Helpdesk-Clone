@@ -49,8 +49,6 @@ const GameSupport = () => {
 
       <GameCards />
 
-      {isSeeMoreActive && <GameCards />}
-
       {/*See More button */}
       <div className="game-support-see-more-button-container">
         <button className="game-support-see-more-button" onClick={handleClick}>

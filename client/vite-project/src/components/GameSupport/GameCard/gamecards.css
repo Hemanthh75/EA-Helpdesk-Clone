@@ -1,12 +1,14 @@
 .grid-item-image {
   width: 125px;
   height: 180px;
+  border-radius: 5px;
 }
 
 .grid-item-text {
   color: #474747;
   font-weight: 600;
   font-size: 12px;
+  text-align: center;
 }
 
 .grid-item {
@@ -31,7 +33,7 @@
   }
 
   .grid-item-text {
-    padding-left: 50px;
+    width: 158px;
   }
 }
 
@@ -49,7 +51,7 @@
   }
 
   .grid-item-text {
-    padding-left: 35px;
+    width: 125px;
   }
 }
 
@@ -67,7 +69,7 @@
   }
 
   .grid-item-text {
-    padding-left: 35px;
+    width: 125px;
   }
 }
 
@@ -83,9 +85,8 @@
     margin-bottom: 10px;
     margin-right: 20px;
   }
-
   .grid-item-text {
-    padding-left: 35px;
+    width: 125px;
   }
 }
 
@@ -100,8 +101,7 @@
     margin-bottom: 10px;
     margin-right: 20px;
   }
-
   .grid-item-text {
-    padding-left: 35px;
+    width: 125px;
   }
 }
