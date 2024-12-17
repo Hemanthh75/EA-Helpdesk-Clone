@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./gamesupport.css";
 import GameCards from "./GameCard/GameCards";
 
 const GameSupport = () => {
-  const [isSeeMoreActive, setIsSeeMoreActive] = useState(false);
+  const [seeMoreCount, setSeeMoreCount] = useState(0);
 
   const handleClick = () => {
-    setIsSeeMoreActive(true);
+    setSeeMoreCount(seeMoreCount + 1);
   };
+
+  //console.log(seeMoreCount);
 
   return (
     <div className="game-support-container">
@@ -47,7 +49,7 @@ const GameSupport = () => {
 
       {/*Grid container for games*/}
 
-      <GameCards />
+      <GameCards seeMoreCount={seeMoreCount} />
 
       {/*See More button */}
       <div className="game-support-see-more-button-container">
