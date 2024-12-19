@@ -5,7 +5,7 @@ import GameCards from "./GameCard/GameCards";
 const GameSupport = () => {
   const [seeMoreCount, setSeeMoreCount] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
-  const [dropdownvalue, setDropdownValue] = useState("recommended");
+  const [dropdownvalue, setDropdownValue] = useState("");
   const [childData, setChildData] = useState(null);
   const handleClick = () => {
     setSeeMoreCount(seeMoreCount + 1);
@@ -27,6 +27,10 @@ const GameSupport = () => {
   //console.log(childData);
 
   const handledropdownChange = (e) => {
+    if (!childData) {
+      return;
+    }
+
     setDropdownValue(e.target.value);
   };
 
@@ -65,15 +69,15 @@ const GameSupport = () => {
             </option>
             <option
               className="game-support-filter-dropdown-item"
-              value="oldest"
-            >
-              Oldest
-            </option>
-            <option
-              className="game-support-filter-dropdown-item"
               value="newest"
             >
               Newest
+            </option>
+            <option
+              className="game-support-filter-dropdown-item"
+              value="oldest"
+            >
+              Oldest
             </option>
           </select>
         </div>

@@ -15,20 +15,68 @@ const GameCards = ({ parentData, sendDataToParent }) => {
   const [topProducts, setTopProducts] = useState(products.slice(0, 15));
   const [isSearchItem, setIsSearchItem] = useState(true);
 
-  //Filtering A tio Z
+  //Searching functionality
+  const searchItem = () => {
+    let searchTerm = parentData.searchTerm.toLowerCase();
+    let searchItems = products.filter((product) => {
+      return product.name.toLowerCase().includes(searchTerm);
+    });
+
+    if (searchItems.length === 0) {
+      setIsSearchItem(false);
+    } else {
+      setTopProducts(searchItems.slice(0, 15 + parentData.seeMoreCount * 15));
+      setIsSearchItem(true);
+    }
+  };
+
+  //Recommended products
+  const recommendedProducts = () => {
+    const recommended = [...products];
+    let searchTerm = parentData.searchTerm.toLowerCase();
+    if (searchTerm.trim() === "") {
+      setTopProducts(recommended.slice(0, 15 + parentData.seeMoreCount * 15));
+    }
+  };
+  //Filtering A to Z
 
   const sortAtoZ = () => {
     const sortedArray = [...products].sort((a, b) =>
       a.name.localeCompare(b.name)
     );
-    setTopProducts(sortedArray);
+    let searchTerm = parentData.searchTerm.toLowerCase();
+    if (searchTerm.trim() === "") {
+      setTopProducts(sortedArray.slice(0, 15 + parentData.seeMoreCount * 15));
+    }
   };
 
+  //Filtering Z to A
   const sortZtoA = () => {
     const sortedArray = [...products].sort((a, b) =>
       b.name.localeCompare(a.name)
     );
-    setTopProducts(sortedArray);
+    let searchTerm = parentData.searchTerm.toLowerCase();
+
+    if (searchTerm.trim() === "") {
+      setTopProducts(sortedArray.slice(0, 15 + parentData.seeMoreCount * 15));
+    }
+  };
+
+  //Filtering based on newest release
+  const sortNewest = () => {
+    const sortedArray = [...products].sort((a, b) => {
+      return new Date(b.releaseDate) - new Date(a.releaseDate);
+    });
+
+    setTopProducts(sortedArray.slice(0, 15 + parentData.seeMoreCount * 15));
+  };
+
+  const sortOldest = () => {
+    const sortedArray = [...products].sort((a, b) => {
+      return new Date(a.releaseDate) - new Date(b.releaseDate);
+    });
+
+    setTopProducts(sortedArray.slice(0, 15 + parentData.seeMoreCount * 15));
   };
 
   //Useeffect to render seemore products
@@ -36,18 +84,9 @@ const GameCards = ({ parentData, sendDataToParent }) => {
     let searchTerm = parentData.searchTerm.toLowerCase();
 
     if (searchTerm.trim() === "") {
-      setTopProducts(products.slice(0, 15 + parentData.seeMoreCount * 15));
+      recommendedProducts(); //rendering the top 15 recommended items
     } else {
-      let searchItems = products.filter((product) => {
-        return product.name.toLowerCase().includes(searchTerm);
-      });
-
-      if (searchItems.length === 0) {
-        setIsSearchItem(false);
-      } else {
-        setIsSearchItem(true);
-        setTopProducts(searchItems);
-      }
+      searchItem();
     }
 
     //logic to sort the items
@@ -55,7 +94,7 @@ const GameCards = ({ parentData, sendDataToParent }) => {
     //console.log(selectedValue);
     switch (selectedValue) {
       case "recommended":
-        setTopProducts(products);
+        recommendedProducts();
         break;
       case "atoz":
         sortAtoZ();
@@ -63,6 +102,14 @@ const GameCards = ({ parentData, sendDataToParent }) => {
       case "ztoa":
         sortZtoA();
         break;
+      case "newest":
+        sortNewest();
+        break;
+      case "oldest":
+        sortOldest();
+        break;
+      default:
+        recommendedProducts();
     }
 
     sendDataToParent(isSearchItem);
