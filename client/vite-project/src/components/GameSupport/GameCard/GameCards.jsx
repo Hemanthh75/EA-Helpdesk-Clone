@@ -70,7 +70,7 @@ const GameCards = ({ parentData, sendDataToParent }) => {
 
     setTopProducts(sortedArray.slice(0, 15 + parentData.seeMoreCount * 15));
   };
-
+  //Filtering based on oldest release
   const sortOldest = () => {
     const sortedArray = [...products].sort((a, b) => {
       return new Date(a.releaseDate) - new Date(b.releaseDate);
