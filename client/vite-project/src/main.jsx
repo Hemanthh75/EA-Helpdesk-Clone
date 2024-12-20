@@ -11,6 +11,7 @@ import EligibleSignup from "./pages/SignUp/EligibleSignUp/EligibleSignup";
 import IneligibleSignup from "./pages/SignUp/IneligibleSignUp/IneligibleSignUp";
 import TermsConditions from "./pages/SignUp/EligibleSignUp/TermsConditions/TermsConditions";
 import BanHistory from "./pages/BanHistory/BanHistory";
+import TopIssues from "./pages/Topissues/TopIssues";
 
 {
   /*Client side routing using react router dom */
@@ -66,6 +67,11 @@ const router = createBrowserRouter([
   {
     path: "my-ban-history",
     element: <BanHistory />,
+    exact: true,
+  },
+  {
+    path: "help-top-issues",
+    element: <TopIssues />,
     exact: true,
   },
 ]);

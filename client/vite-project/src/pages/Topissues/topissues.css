@@ -1,0 +1,62 @@
+.top-issues-header {
+  background-image: url("/public/Images/Topissues/ea-bg.png");
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .top-issues-header {
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 70px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .top-issues-header-inp {
+    width: 608px;
+    height: 58px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 58px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439) {
+  .top-issues-header {
+    height: 300px;
+    background-image: url("/public/Images/Topissues/ea-bg.png");
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 70px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .top-issues-header-inp {
+    width: 417.63px;
+    height: 58px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 58px;
+    margin-left: 10px;
+  }
+}

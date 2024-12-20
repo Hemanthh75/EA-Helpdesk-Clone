@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./gamecards.css";
 import FeaturedProducts from "./FeaturedProducts";
 import AllProducts from "./AllProducts";
+import { useNavigate } from "react-router-dom";
 
 const GameCards = ({ parentData, sendDataToParent }) => {
   //logic for filtering the non-featured items..
@@ -14,6 +15,7 @@ const GameCards = ({ parentData, sendDataToParent }) => {
 
   const [topProducts, setTopProducts] = useState(products.slice(0, 15));
   const [isSearchItem, setIsSearchItem] = useState(true);
+  const navigate = useNavigate();
 
   //Searching functionality
   const searchItem = () => {
@@ -91,6 +93,7 @@ const GameCards = ({ parentData, sendDataToParent }) => {
 
     //logic to sort the items
     let selectedValue = parentData.dropdownvalue;
+
     //console.log(selectedValue);
     switch (selectedValue) {
       case "recommended":
@@ -130,7 +133,10 @@ const GameCards = ({ parentData, sendDataToParent }) => {
           {topProducts &&
             topProducts.map((product) => {
               return (
-                <div className="grid-item">
+                <div
+                  className="grid-item"
+                  onClick={() => navigate("/help-top-issues")}
+                >
                   <img
                     className="grid-item-image"
                     src={`https://help.ea.com/eahelp/images/box-art/x2/${product.urlName}.jpg`}
