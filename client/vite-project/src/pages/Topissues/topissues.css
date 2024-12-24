@@ -3,6 +3,34 @@
   text-align: center;
 }
 
+.top-issues-header-btn {
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.inactive-account-support-btn,
+.inactive-manage-btn {
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.active-account-support-btn,
+.active-manage-btn {
+  border: none;
+  border-bottom: 4px solid red;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  padding-top: 20px;
+  font-size: 18px;
+  background-color: transparent;
+}
 @media screen and (min-width: 1440px) {
   .top-issues-header {
     height: 300px;
@@ -29,13 +57,16 @@
     height: 58px;
     margin-left: 10px;
   }
+
+  .account-support-manage-container {
+    width: 1056px;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 1024px) and (max-width: 1439) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .top-issues-header {
     height: 300px;
-    background-image: url("/public/Images/Topissues/ea-bg.png");
-    text-align: center;
     margin-top: 30px;
   }
 
@@ -50,13 +81,146 @@
     margin-top: 40px;
   }
   .top-issues-header-inp {
-    width: 417.63px;
-    height: 58px;
+    width: 819.9px;
+    height: 40px;
   }
 
   .top-issues-header-btn {
     width: 47.56px;
-    height: 58px;
+    height: 40px;
     margin-left: 10px;
+  }
+
+  .account-support-manage-container {
+    width: 1056px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .top-issues-header {
+    height: 300px;
+    margin-top: 60px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 70px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .top-issues-header-inp {
+    width: 614.39px;
+    height: 40px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .account-support-manage-container {
+    width: 736px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .top-issues-header {
+    height: 172px;
+    margin-top: 30px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 20px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-issues-header-inp {
+    width: 340px;
+    height: 40px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .account-support-manage-container {
+    width: 393px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .top-issues-header {
+    height: 172px;
+    margin-top: 30px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 20px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-issues-header-inp {
+    width: 300px;
+    height: 40px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .account-support-manage-container {
+    width: 343px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .top-issues-header {
+    height: 172px;
+    margin-top: 30px;
+  }
+
+  .top-issues-header-img {
+    margin-top: 20px;
+  }
+
+  .top-issues-header-inp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-issues-header-inp {
+    width: 256px;
+    height: 40px;
+  }
+
+  .top-issues-header-btn {
+    width: 47.56px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .account-support-manage-container {
+    width: 288px;
+    margin: 0 auto;
   }
 }

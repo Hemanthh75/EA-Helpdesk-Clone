@@ -1,0 +1,184 @@
+.account-support-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.account-grid-container {
+  display: grid;
+  margin-top: 20px;
+}
+
+.account-support-all-btn {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 1024px) {
+  .account-support-container {
+    padding: 15px;
+    height: 407px;
+  }
+
+  .account-grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .account-grid-item {
+    display: flex;
+    justify-content: space-between;
+    width: 498px;
+    height: 64px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0.2px;
+    overflow-y: hidden;
+  }
+  .account-support-all-btn-container {
+    width: 1056px;
+    text-align: center;
+  }
+  .account-support-all-btn {
+    width: 259px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .account-support-container {
+    padding: 15px;
+    height: 833px;
+  }
+
+  .account-grid-container {
+    grid-template-columns: auto;
+  }
+
+  .account-grid-item {
+    display: flex;
+    justify-content: space-between;
+    width: 689.22px;
+    height: 64px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding: 20px 10px;
+    margin-bottom: 45px;
+    box-shadow: 0px 0.2px;
+    overflow-y: hidden;
+  }
+
+  .account-support-all-btn-container {
+    width: 689.22px;
+    text-align: center;
+  }
+  .account-support-all-btn {
+    width: 259px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .account-support-heading {
+    font-size: 26px;
+  }
+  .account-support-container {
+    height: 881px;
+  }
+
+  .account-grid-container {
+    grid-template-columns: auto;
+  }
+
+  .account-grid-item {
+    display: flex;
+    justify-content: space-between;
+    width: 380.5px;
+    height: 64px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding: 20px 10px;
+    margin-bottom: 45px;
+    box-shadow: 0px 0.2px;
+    overflow-y: hidden;
+  }
+
+  .account-support-all-btn-container {
+    width: 380.5px;
+    text-align: center;
+  }
+  .account-support-all-btn {
+    width: 259px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .account-support-heading {
+      font-size: 26px;
+    }
+    .account-support-container {
+      height: 881px;
+    }
+  
+    .account-grid-container {
+      grid-template-columns: auto;
+    }
+  
+    .account-grid-item {
+      display: flex;
+      justify-content: space-between;
+      width: 335.5px;
+      height: 64px;
+      border: 1px solid gray;
+      font-size: 18px;
+      padding: 20px 10px;
+      margin-bottom: 45px;
+      box-shadow: 0px 0.2px;
+      overflow-y: hidden;
+    }
+  
+    .account-support-all-btn-container {
+      width: 335.5px;
+      text-align: center;
+    }
+    .account-support-all-btn {
+      width: 259px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 374px) {
+    .account-support-heading {
+      font-size: 26px;
+    }
+    .account-support-container {
+      height: 901px;
+    }
+  
+    .account-grid-container {
+      grid-template-columns: auto;
+    }
+  
+    .account-grid-item {
+      display: flex;
+      justify-content: space-between;
+      width: 286px;
+      height: 64px;
+      border: 1px solid gray;
+      font-size: 16px;
+      padding: 20px 10px;
+      margin-bottom: 45px;
+      box-shadow: 0px 0.2px;
+    }
+  
+    .account-support-all-btn-container {
+      width: 286px;
+      text-align: center;
+    }
+    .account-support-all-btn {
+      width: 259px;
+      height: 40px;
+    }
+  }
