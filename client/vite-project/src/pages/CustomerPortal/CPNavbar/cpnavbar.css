@@ -1,0 +1,52 @@
+.cp-navbar-container {
+  height: 32px;
+  background-color: #e5e5e5;
+
+  box-shadow: 0px 3px gray;
+}
+
+.cp-navbar-items {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.cp-navbar-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.cp-navbar-img {
+  height: 18px;
+  width: 18px;
+}
+
+.cp-navbar-eacom-item {
+  width: 73.36px;
+  height: 32px;
+  background-color: #6f6f6f;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cp-navbar-eacom {
+  color: #fff !important;
+}
+
+.cp-navbar-vertical-line {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #c2c2c2;
+}
+
+.cp-navbar-vertical-line-2 {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #c2c2c2;
+  height: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+}

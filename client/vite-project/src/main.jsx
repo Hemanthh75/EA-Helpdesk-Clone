@@ -12,6 +12,7 @@ import IneligibleSignup from "./pages/SignUp/IneligibleSignUp/IneligibleSignUp";
 import TermsConditions from "./pages/SignUp/EligibleSignUp/TermsConditions/TermsConditions";
 import BanHistory from "./pages/BanHistory/BanHistory";
 import TopIssues from "./pages/Topissues/TopIssues";
+import CustomerPortal from "./pages/CustomerPortal/CustomerPortal";
 
 {
   /*Client side routing using react router dom */
@@ -72,6 +73,11 @@ const router = createBrowserRouter([
   {
     path: "help-top-issues",
     element: <TopIssues />,
+    exact: true,
+  },
+  {
+    path: "cp-ui",
+    element: <CustomerPortal />,
     exact: true,
   },
 ]);

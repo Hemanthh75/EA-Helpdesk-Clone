@@ -1,0 +1,25 @@
+.cp-container {
+  margin-top: 2px;
+  background-color: #e5e5e5;
+}
+.cp-container-info {
+  width: 950px;
+  margin: 15px auto;
+}
+
+.cp-topics-list-container {
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid black;
+}
+.cp-topics-list-item {
+  width: 252px;
+  height: 52px;
+  padding: 15px 30px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.cp-topics-list-container{
+    display: flex;
+}
