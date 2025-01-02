@@ -18,8 +18,12 @@
   padding: 15px 30px;
   border-bottom: 1px solid white;
   cursor: pointer;
+  overflow: hidden;
 }
 
-.cp-topics-list-container{
-    display: flex;
+.cp-topics-list-container {
+  display: flex;
+}
+.cp-topics-list-item-container {
+  width: 100%;
 }

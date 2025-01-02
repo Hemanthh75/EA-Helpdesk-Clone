@@ -16,10 +16,7 @@ import EAData from "./EAData/EAData";
 import Playtesting from "./Playtesting/Playtesting";
 import Connections from "./Connections/Connections";
 
-
-
 const CustomerPortal = () => {
-
   //Creating a activevalues variable and initiating with an array of 12 false values
   const [activeValues, setIsActiveValues] = useState(
     Array(12)
@@ -35,7 +32,6 @@ const CustomerPortal = () => {
   };
 
   //console.log(activeValues);
-
 
   //since we cannot use the switch condition in jsx we are use it in a render function and calling that in jsx
   const renderComponent = () => {
@@ -73,8 +69,8 @@ const CustomerPortal = () => {
   return (
     <>
       <Helmet>
-        <meta name="viewport" content="width=980" />  
-      </Helmet>  
+        <meta name="viewport" content="width=980" />
+      </Helmet>
       <CPNavbar />
       <div className="cp-container">
         <div className="cp-container-info">
@@ -162,7 +158,9 @@ const CustomerPortal = () => {
                 <h3>Connections</h3>
               </li>
             </ul>
-            <div>{renderComponent()}</div>
+            <div className="cp-topics-list-item-container">
+              {renderComponent()}
+            </div>
           </div>
         </div>
       </div>

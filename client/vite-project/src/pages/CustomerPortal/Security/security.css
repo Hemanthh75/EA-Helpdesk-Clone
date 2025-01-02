@@ -1,0 +1,66 @@
+.cp-security-pass {
+  padding: 30px 30px;
+}
+
+.cp-security-pass-header {
+  display: flex;
+  gap: 25px;
+}
+
+.cp-secuirty-content-texts {
+  display: flex;
+  gap: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cp-security-login {
+  padding: 0px 30px;
+}
+
+.cp-security-login p {
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.cp-security-turn-btn,
+.cp-security-secondary-btn {
+  width: 165.34px;
+  height: 31px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.5px 1px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cp-security-dd {
+  padding: 30px 30px;
+}
+.cp-security-dd-headings {
+  display: flex;
+  gap: 150px;
+  margin-bottom: 20px;
+}
+
+.cp-security-dd-texts {
+  display: flex;
+  gap: 110px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.cp-security-secondary-mail {
+  padding: 0px 30px;
+}
+
+.cp-security-btn,
+.cp-security-untrust-btn {
+  border: none;
+  background-color: transparent;
+  color: #269dcf;
+}
+
+.cp-security-btn:hover {
+  border-bottom: 1px solid #269dcf;
+}

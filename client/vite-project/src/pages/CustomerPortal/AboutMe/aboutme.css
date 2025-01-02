@@ -1,1 +1,76 @@
+.cp-abtme-basicinfo {
+  padding: 30px 30px;
+}
 
+.cp-abtme-header {
+  display: flex;
+  gap: 25px;
+}
+
+.cp-abtme-basicinfo-content,
+.cp-abtme-regional-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.cp-abtme-basicinfo-list-item,
+.cp-abtme-regional-list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding-bottom: 20px;
+}
+
+.cp-abtme-basicinfo-image {
+  height: 123px;
+  width: 123px;
+}
+
+.cp-abtme-basicinfo-img-edit {
+  color: white;
+  background-color: rgb(63, 201, 255);
+  position: absolute;
+  z-index: 999;
+  right: 515px;
+  top: 415px;
+}
+
+.cp-abtme-email,
+.cp-abtme-regional {
+  padding: 0px 30px;
+}
+
+.cp-abtme-email-texts {
+  padding: 25px 0;
+  display: flex;
+  gap: 35px;
+}
+
+.cp-abtme-phone {
+  padding: 30px 30px;
+}
+
+.cp-abtme-phone-texts {
+  padding: 25px 0;
+  gap: 35px;
+}
+
+.cp-abtme-btn {
+  border: none;
+  background-color: transparent;
+  color: #269dcf;
+}
+
+.cp-abtme-btn:hover {
+  border-bottom: 1px solid #269dcf;
+}
+
+.cp-abtme-phone-btn {
+  width: 165.34px;
+  height: 31px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.5px 1px;
+  font-weight: bold;
+}
