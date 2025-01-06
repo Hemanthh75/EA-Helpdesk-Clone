@@ -100,8 +100,20 @@ const Email = () => {
       <div className="email-ver-pref">
         <h3>Preferred Platforms</h3>
         <div className="email-ver-pref-grid">
-          <div className="email-ver-pref-grid-item"></div>
+          <div className="email-ver-pref-grid-item">Mobile</div>
+          <div className="email-ver-pref-grid-item">Nintendo Switch</div>
+          <div className="email-ver-pref-grid-item">EA app</div>
+          <div className="email-ver-pref-grid-item">PS3</div>
+          <div className="email-ver-pref-grid-item">PS4</div>
+          <div className="email-ver-pref-grid-item">Xbox 360</div>
+          <div className="email-ver-pref-grid-item">Xbox One</div>
+          <div className="email-ver-pref-grid-item">PS5</div>
+          <div className="email-ver-pref-grid-item">Xbox Series X</div>
         </div>
+      </div>
+      <hr style={{ margin: "20px" }} />
+      <div className="email-ver-pref-upfdate-btn">
+        <button>Update</button>
       </div>
     </div>
   );

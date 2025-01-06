@@ -1,0 +1,11 @@
+.payment-method-content {
+  padding: 30px;
+}
+
+.payment-method-content button {
+  width: 150px;
+  height: 26px;
+  background-color: transparent;
+  box-shadow: 0.5px 1px;
+  margin: 15px 25px;
+}

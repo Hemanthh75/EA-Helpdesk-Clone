@@ -129,15 +129,43 @@
   padding: 0px 30px;
 }
 
+.email-ver-pref-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
 .email-ver-pref-grid-item {
   height: 98px;
   width: 98px;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid black;
+  margin-top: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .email-ver-pref-grid-item img {
   height: 98px;
   width: 98px;
+}
+
+.email-ver-pref-upfdate-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.email-ver-pref-upfdate-btn button {
+  width: 100px;
+  height: 31px;
+  background-color: rgb(64, 43, 158);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }

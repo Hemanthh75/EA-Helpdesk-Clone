@@ -1,0 +1,40 @@
+.order-his-container {
+  padding: 30px;
+}
+
+.order-his-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-his-dropdown {
+  display: flex;
+  gap: 10px;
+}
+
+.order-his-dropdown select {
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  box-shadow: 0.5px 1px;
+}
+
+.order-his-details {
+  height: 320px;
+}
+
+.order-his-detail {
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-his-products {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-his-foot {
+  font-size: 12px;
+}
