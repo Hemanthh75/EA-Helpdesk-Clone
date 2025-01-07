@@ -1,0 +1,34 @@
+.player-controls {
+  padding: 30px;
+}
+
+.player-control-spend {
+  padding: 30px;
+}
+
+.player-control-spend-header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.player-control-spend-header button {
+  border: none;
+  background-color: transparent;
+  color: #269dcf;
+}
+
+.player-control-spend-header button:hover {
+  border-bottom: 1px solid #269dcf;
+}
+
+.player-control-spend-content {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.player-control-spend-content hr {
+  border: none;
+  border-bottom: 1px dotted black;
+  margin-top: 30px;
+}

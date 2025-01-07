@@ -1,0 +1,27 @@
+.EAData {
+  padding: 30px;
+}
+
+.EAData-content p {
+  font-size: 14px;
+}
+
+.EAData-content b {
+  font-size: 14px;
+}
+
+.EAData-content a {
+  text-decoration: none;
+  color: #269dcf;
+}
+
+.EAData-content button {
+  width: 170px;
+  height: 27px;
+  background-color: rgb(64, 43, 158);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
