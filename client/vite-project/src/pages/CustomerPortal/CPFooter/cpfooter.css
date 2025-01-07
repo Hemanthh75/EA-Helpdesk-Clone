@@ -1,0 +1,10 @@
+.CPFooter-container {
+  width: 100%;
+  height: 226px;
+  background: url(/public/Images/CP/Foot/bgCP.png);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 165px;
+}

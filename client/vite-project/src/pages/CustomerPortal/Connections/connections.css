@@ -1,0 +1,44 @@
+.connections-container {
+  padding: 30px;
+}
+
+.connections-content-top hr {
+  border: none;
+  border-bottom: 1px dotted black;
+  margin-top: 25px;
+}
+
+.connections-content-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.connections-content-top button {
+  width: 68.67px;
+  height: 31px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.5px 1px;
+  font-weight: bold;
+}
+
+.connections-content-items-text {
+  padding-top: 60px;
+  h5 {
+    color: gray;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.connections-non-authorized {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: gray;
+  }
+}
