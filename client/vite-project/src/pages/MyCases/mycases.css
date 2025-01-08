@@ -5,6 +5,11 @@
   overflow: hidden;
 }
 
+.mycaseslabel {
+  color: black;
+  font-weight: bold;
+}
+
 .my-cases-content-description,
 .my-cases-content-inputs {
   background-color: rgb(238, 237, 237);
